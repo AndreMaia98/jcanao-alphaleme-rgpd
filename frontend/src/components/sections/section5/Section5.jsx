@@ -15,7 +15,7 @@ export default function Sec5() {
             </TypographyTitle>
           </Grid>
           <Grid container sx={{ display: "flex", gap: "16px" }}>
-            <Grid item xs>
+            <Grid item xs={12} lg>
               <Box sx={{ display: "flex", gap: "16px", alignItems: "center" }}>
                 <TypographyNumber>1</TypographyNumber>
                 <TypographyText>Falta de conhecimento</TypographyText>
@@ -25,7 +25,7 @@ export default function Sec5() {
                 principais razões para quase metade dos incidentes ocorridos.
               </Text>
             </Grid>
-            <Grid item xs>
+            <Grid item xs={12} lg>
               <Box sx={{ display: "flex", gap: "16px", alignItems: "center" }}>
                 <TypographyNumber>2</TypographyNumber>
                 <TypographyText>Conhecimento reduzido</TypographyText>
@@ -36,7 +36,7 @@ export default function Sec5() {
                 grave ou uma coima elevada.
               </Text>
             </Grid>
-            <Grid item xs>
+            <Grid item xs={12} lg>
               <Box sx={{ display: "flex", gap: "16px", alignItems: "center" }}>
                 <TypographyNumber>3</TypographyNumber>
                 <TypographyText>Reagir em vez de prevenir</TypographyText>
