@@ -24,8 +24,16 @@ export default function ExpandBox() {
   const secondGridData = data.Action.slice(5);
 
   return (
-    <Grid container sx={{ display: "flex", gap: "16px" }}>
-      <Grid item xs>
+    <Grid
+      container
+      sx={{
+        display: "flex",
+        gap: "16px",
+        marginBottom: "64px",
+        justifyContent: "center",
+      }}
+    >
+      <Grid item xs={12} sm={12} md={8} lg>
         {firstGridData.map((item) => (
           <SBox
             key={item.number}
@@ -42,7 +50,15 @@ export default function ExpandBox() {
             >
               <TypographyNumber>{item.Number}</TypographyNumber>
               <TypographyTitle>{item.Title}</TypographyTitle>
-              <img src={Arrow} alt="" style={{ marginLeft: "auto" }} />
+              <img
+                src={Arrow}
+                alt=""
+                style={{
+                  marginLeft: "auto",
+                  transition: "transform 0.3s ease-in-out",
+                  transform: isExpanded[item.Number] ? "rotate(180deg)" : "",
+                }}
+              />
             </Box>
             {isExpanded[item.Number] && (
               <BoxExpanded>
@@ -65,7 +81,7 @@ export default function ExpandBox() {
           </SBox>
         ))}
       </Grid>
-      <Grid item xs>
+      <Grid item xs={12} sm={12} md={8} lg>
         {secondGridData.map((item) => (
           <SBox
             key={item.number}

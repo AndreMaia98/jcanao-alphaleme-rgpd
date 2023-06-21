@@ -7,5 +7,6 @@ export const STypography = styled(Typography)`
     font-weight: 500;
     font-size: Poppins Medium;
     color: var(--blue);
+    margin-bottom: 66px;
   }
 `;
