@@ -4,7 +4,7 @@ import { STypography } from "./style";
 import Button from "../../ui/buttons/button";
 import ExpandBox from "../../expandbox";
 
-export default function Sec2() {
+export default function Sec3() {
   return (
     <Container maxWidth="false">
       <Container maxWidth="lg" disableGutters>
