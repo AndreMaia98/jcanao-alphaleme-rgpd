@@ -1,10 +1,10 @@
 body {
   margin: 0;
+  font-family: "Poppins", sans-serif;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
@@ -15,4 +15,26 @@ code {
   /* Header Color */
   --header-letter: #fff;
   --header-bg: #000;
+
+  /* White Colors */
+  --white: #fff;
+
+  /* Black Colors */
+  --black: #211c1d;
+  --black-second: #2c2c2e;
+  --black-third: #30404d;
+
+  /* Gray Colors */
+  --gray: #00000029;
+
+  /* Red Colors */
+  --red: #ff0000;
+
+  /* Blue Colors */
+  --blue: #0092f6;
+  --blue-second: #00a8ff;
+  --light-blue: #0092f629;
+
+  /* Orange Colors */
+  --orange: #f6ac00;
 }

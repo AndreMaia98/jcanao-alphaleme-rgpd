@@ -1,36 +1,41 @@
 import React from "react";
-import { SContainer, SButton } from "./styles";
+import { SContainer, SButton, Simg } from "./styles";
 import { Grid, Container } from "@mui/material";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/images/jcanaoLogo.svg";
+import Logo from "../../assets/logo/Alphaleme.png";
 
 export default function Header() {
+  
   const buttonData = [
-    { name: "Home", link: "/" },
-    { name: "About", link: "/contact" },
+    { name: "Sobre Nós", link: "/about" },
+    { name: "Serviços", link: "/services" },
   ];
 
   return (
     <SContainer maxWidth={false}>
-      <Container maxWidth="lg">
-        <Grid container sx={{ height: "100%", margin: "0px 30px" , display: "flex", alignItems: "center", justifyContent: "space-between"}}>
+      <Container
+        maxWidth="lg"
+        disableGutters
+        sx={{
+          height: "100%",
+        }}
+      >
+        <Grid
+          container
+          sx={{
+            height: "100%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+          }}
+        >
           <Grid item>
-            <img src={Logo} alt="" height={70} />
+            <Simg src={Logo} alt="" />
           </Grid>
-          <Grid item >
+          <Grid item sx={{ display: "flex", gap: { xs: "16px", sm: "32px" } }}>
             {buttonData.map((button) => (
               <Link to={button.link} key={button.name}>
-                <SButton
-                  variant="text"
-                  sx={{
-                    color: "white",
-                    fontSize: "1.2rem",
-                    fontWeight: "bold",
-                    textTransform: "none",
-                  }}
-                >
-                  {button.name}
-                </SButton>
+                <SButton>{button.name}</SButton>
               </Link>
             ))}
           </Grid>
