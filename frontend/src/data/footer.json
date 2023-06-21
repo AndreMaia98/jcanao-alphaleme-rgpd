@@ -1,0 +1,51 @@
+{
+    "Produtos": [
+      { "text": "Canow", "link": "https://jcanao.com/comunidades-intermunicipais/" },
+      { "text": "eSIG", "link": "/esig" },
+      { "text": "Cognita", "link": "/cognita" }
+    ],
+    "Soluções": [
+      { "text": "Portos", "link": "http://www.canow.co/index.php/pt/portos-e-logistica/portos" },
+      { "text": "Empresas", "link": "/empresas" },
+      { "text": "Transitários", "link": "http://www.canow.co/index.php/pt/portos-e-logistica/transitarios" },
+      { "text": "Logística", "link": "/logistica" }
+    ],
+    "Serviços": [
+      { "text": "UX & UI Design", "link": "/ux-ui-design" },
+      { "text": "Software Development", "link": "/software-development" },
+      { "text": "Internet of Things", "link": "/iot" },
+      { "text": "Data Analytics", "link": "/data-analytics" },
+      { "text": "Inteligência Artificial", "link": "/ia" },
+      { "text": "Web Design", "link": "/web-design" },
+      { "text": "Branding", "link": "/branding" },
+      { "text": "Marketing Digital", "link": "/marketing-digital" }
+    ],
+    "Consultoria": [
+      { "text": "Diagnóstico Empresarial", "link": "/diagnostico-empresarial" },
+      { "text": "Contabilística & Financeira", "link": "/contabilidade-financeira" },
+      { "text": "RGPD", "link": "/rgpd" },
+      { "text": "Gestão de Empresas", "link": "/gestao-empresas" },
+      { "text": "I&D e Inovação", "link": "/id-inovacao" },
+      { "text": "Estudos e Benchmarks", "link": "/estudos-benchmarks" }
+    ],
+    "Contactos": [
+      { "text": "+351 258 800 600", "link": "tel:+351258800600" },
+      { "text": "(chamada para rede fixa nacional)", "link": "" },
+      { "text": "+351 924 453 260", "link": "tel:+351924453260" },
+      { "text": "jcanao@jcanao.pt", "link": "mailto:jcanao@jcanao.pt" },
+      { "text": "comercial@jcanao.pt", "link": "mailto:comercial@jcanao.pt" }
+    ],
+    "Redes Sociais": [
+      { "text": "Facebook", "link": "https://www.facebook.com/jcanao.pt" },
+      { "text": "LinkedIn", "link": "https://pt.linkedin.com/company/jcanao"}
+    ],
+    "Localização": [
+      {
+        "text": "Av. de Cabo Verde, lote 5",
+        "link": "https://www.google.com/maps/place/JCan%C3%A3o/@41.6902757,-8.8475402,18.75z/data=!4m6!3m5!1s0xd25c9d44297a0e3:0x9838c250e3df8a5a!8m2!3d41.6908665!4d-8.8477907!16s%2Fg%2F1thctmjp?entry=ttu"
+      }
+    ],
+    "Certificações": [{
+
+    }]
+  }
