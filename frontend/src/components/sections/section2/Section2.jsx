@@ -1,11 +1,4 @@
-import {
-  Box,
-  Container,
-  Grid,
-  List,
-  ListItem,
-  Typography,
-} from "@mui/material";
+import { Box, Container, Grid, List, ListItem } from "@mui/material";
 import React from "react";
 import Title from "../../ui/typographys/title";
 import Text from "../../ui/typographys/text";
@@ -17,17 +10,25 @@ export default function Sec2() {
       maxWidth="false"
       sx={{
         background: "var(--white)",
-        paddingTop: "315px",
-        paddingBottom: "285px",
+        paddingTop: { xs: "64px", lg: "315px" },
+        paddingBottom: { xs: "64px", lg: "285px" },
       }}
     >
       <Container maxWidth="lg" disableGutters>
-        <Grid container sx={{ display: "flex", gap: "16px" }}>
+        <Grid
+          container
+          sx={{ display: "flex", gap: { xs: "64px", lg: "16px" } }}
+        >
           <Grid
             item
             xs={12}
+            md={5}
             lg
-            sx={{ display: "flex", flexDirection: "column", gap: "26px" }}
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "26px",
+            }}
           >
             <Title>Novo Decreto-Lei 65/2021</Title>
             <Box>
@@ -47,7 +48,7 @@ export default function Sec2() {
               </Text>
             </Box>
           </Grid>
-          <Grid item xs={12} lg>
+          <Grid item xs={12} md={6} lg>
             <SBox>
               <STypography>
                 Conheça as obrigações que as entidades devem respeitar:

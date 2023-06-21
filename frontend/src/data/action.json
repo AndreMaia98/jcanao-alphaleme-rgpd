@@ -1,0 +1,99 @@
+{
+  "Action": [
+    {
+      "Number": 1,
+      "Title": "Classificar a Entidade",
+      "Subtitle": "Identificar e classificar a entidade, para os efeitos do RJSC:",
+      "Lista": [
+        "Administração Pública",
+        "Operadores de infraestruturas critícas",
+        "Operadores de serviços essenciais",
+        "Prestadores de serviços digitais",
+        "Quaisquer outras entidades que utilizem redes e sistemas de informação"
+      ]
+    },
+    {
+      "Number": 2,
+      "Title": "Notificar o CNCS",
+      "Subtitle": "Designar e notificar o CNCS relativamente aos:",
+      "Lista": [
+        "Ponto de Contacto Permanente (PcP)",
+        "Responsável de Segurança (RS)"
+      ]
+    },
+    {
+      "Number": 3,
+      "Title": "Política de Segurança da Informação",
+      "Subtitle": "Adotar uma PSI",
+      "Lista": ["Designar um Comité de Cibersegurança"]
+    },
+    {
+      "Number": 4,
+      "Title": "Inventariar Ativos",
+      "Subtitle": "Inventariar Ativos",
+      "Lista": [
+        "Categorizar os tipos de informação de serviços",
+        "Documentar e assinar pelo Responsável de Segurança"
+      ]
+    },
+    {
+      "Number": 5,
+      "Title": "Analisar Riscos",
+      "Subtitle": "Realizar uma análise dos riscos a todos os ativos:",
+      "Lista": [
+        "Determinar o nível de segurança para, pelo menos, cada uma das dimensões: Confidencialidade (C), Integridade (I), Disponibilidade (D)",
+        "Determinar também para a Autenticidade (A) e a Rastreabilidade (R)",
+        "Estabelecer a categoria do sistema (Baixo, Médio ou Alto) de acordo com os níveis de criticidade e segurança atribuídas ás diferentes dimensões"
+      ]
+    },
+    {
+      "Number": 6,
+      "Title": "Adotar Medidas",
+      "Subtitle": "Adotar as medidas técnicas e organizativas adequadas para gerir os riscos:",
+      "Lista": [
+        "Criar e monitorizar um plano de ação;",
+        "Adotar uma framework de gestão de segurança dos SI"
+      ]
+    },
+    {
+      "Number": 7,
+      "Title": "Plano de Segurança",
+      "Subtitle": "Elaborar o Plano de Segurança, com, pelo menos:",
+      "Lista": [
+        "Política de Segurança",
+        "A descrição de todas as medidas adotadas",
+        "A identificação do RS e do PcP",
+        "Documentar e assinar pelo RS"
+      ]
+    },
+    {
+      "Number": 8,
+      "Title": "Notificar incidentes",
+      "Subtitle": "Adotar procedimento para a notificação de incidentes:",
+      "Lista": [
+        "Adotar procedimento para a notificação de incidentes",
+        "Implementar os meios e os procedimentos necessários à deteção, à avaliação do impacto, classificação e à notificação de incidentes com impacto relevante ou substancial"
+      ]
+    },
+    {
+      "Number": 9,
+      "Title": "Relatório Anual",
+      "Subtitle": "Preparar o Relatório Aual",
+      "Lista": [
+        "Adotar um template de relatório",
+        "Elaborar o relatório anualmente",
+        "Validar Draft do relatório com a Administração",
+        "Documentar e assinar pelo RS",
+        "Remeter ao CNCS."
+      ]
+    },
+    {
+      "Number": 10,
+      "Title": "Comunicações Seguras",
+      "Subtitle": "Comunicações seguras com o CNCS:",
+      "Lista": [
+        "Adotar meios eletrónicos, com sistema de identificação eletrónico com nível de garantia elevado"
+      ]
+    }
+  ]
+}
