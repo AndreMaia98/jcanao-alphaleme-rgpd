@@ -6,10 +6,14 @@ export const TypographyTitle = styled(Typography)`
     font-size: 88px;
     font-family: Poppins SemiBold;
     font-weight: 600;
-    color: var(--dark);
+    color: var(--black);
     text-align: left;
     margin-bottom: 16px;
-    padding-top: 200px;
+    margin-top: 200px;
+    @media (max-width: 768px) {
+      font-size: 64px;
+      margin-top: 100px;
+    }
   }
 `;
 
@@ -20,6 +24,9 @@ export const TypographySubTitle = styled(Typography)`
     font-weight: 600;
     color: var(--blue);
     text-align: left;
+    @media (max-width: 768px) {
+      font-size: 28px;
+    }
   }
 `;
 

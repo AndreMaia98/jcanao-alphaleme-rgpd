@@ -1,6 +1,6 @@
 import React from "react";
-import { Typography } from "./style";
+import { TypographyText } from "./style";
 
 export default function Text({ children }) {
-  return <Typography>{children}</Typography>;
+  return <TypographyText>{children}</TypographyText>;
 }

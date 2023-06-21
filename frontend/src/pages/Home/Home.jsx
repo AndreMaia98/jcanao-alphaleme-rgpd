@@ -1,13 +1,12 @@
 import React from "react";
-import { Title } from "./styles";
-import { Container } from "@mui/material";
+import Section1 from "../../components/sections/section1";
+import Section2 from "../../components/sections/section2";
 
 export default function Home() {
   return (
-    <Container>
-      <Title>
-        Home
-      </Title>
-    </Container>
+    <>
+      <Section1 />
+      <Section2 />
+    </>
   );
 }

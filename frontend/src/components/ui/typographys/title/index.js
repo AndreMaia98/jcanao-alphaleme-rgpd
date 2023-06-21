@@ -1,3 +1,3 @@
-import Button from "./Button";
+import Title from "./Typography";
 
-export default Button;
+export default Title;
