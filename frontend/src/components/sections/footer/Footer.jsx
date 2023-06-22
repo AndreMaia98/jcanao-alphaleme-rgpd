@@ -54,15 +54,15 @@ export default function Footer1() {
             <TypographyDesc>
               Av. de Cabo Verde, lote 5 4900-568 Viana do Castelo
             </TypographyDesc>
-            <TypographyDesc>
-              <Link
-                to="https://goo.gl/maps/99aMJ8tZskjkg7Rk9"
-                target="_blank"
-                style={{ textDecoration: "none" }}
-              >
+            <Link
+              to="https://goo.gl/maps/99aMJ8tZskjkg7Rk9"
+              target="_blank"
+              style={{ textDecoration: "none" }}
+            >
+              <TypographyDesc>
                 <b>Googlemaps</b>
-              </Link>
-            </TypographyDesc>
+              </TypographyDesc>
+            </Link>
           </Grid>
           <Grid item xs={2}>
             <TypographyTitles>Legal</TypographyTitles>
