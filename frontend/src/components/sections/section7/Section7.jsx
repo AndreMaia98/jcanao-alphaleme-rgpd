@@ -20,7 +20,7 @@ export default function Sec7() {
             marginTop: "297px",
           }}
         >
-          <Grid item xs={12}>
+          <Grid item xs={12} align="center">
             <TypographyTitle>
               Como ajudamos as empresas a suceder
             </TypographyTitle>
@@ -36,7 +36,8 @@ export default function Sec7() {
           >
             <Grid
               item
-              xs={2}
+              xs={12}
+              lg={2}
               sx={{
                 display: "flex",
                 alignItems: "start",
@@ -45,7 +46,7 @@ export default function Sec7() {
             >
               <img src={Speed} alt="" />
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={12} lg={6}>
               <TypographySubTitle>
                 Acelerar a sua estratégia de cibersegurança
               </TypographySubTitle>
@@ -68,7 +69,8 @@ export default function Sec7() {
           >
             <Grid
               item
-              xs={2}
+              xs={12}
+              lg={2}
               sx={{
                 display: "flex",
                 alignItems: "start",
@@ -77,7 +79,7 @@ export default function Sec7() {
             >
               <img src={People} alt="" />
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={12} lg={6}>
               <TypographySubTitle>
                 Alinhar todos os stakeholders
               </TypographySubTitle>
@@ -99,7 +101,8 @@ export default function Sec7() {
           >
             <Grid
               item
-              xs={2}
+              xs={12}
+              lg={2}
               sx={{
                 display: "flex",
                 alignItems: "start",
@@ -108,7 +111,7 @@ export default function Sec7() {
             >
               <img src={Task} alt="" />
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={12} lg={6}>
               <TypographySubTitle>Priorizar iniciativas</TypographySubTitle>
               <Text>
                 Trabalhamos em conjunto consigo para entender o seu cenário de

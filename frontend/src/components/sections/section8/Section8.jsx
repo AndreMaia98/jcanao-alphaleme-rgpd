@@ -11,7 +11,7 @@ export default function Sec8() {
           container
           sx={{ marginTop: "580px", display: "flex", justifyContent: "center" }}
         >
-          <Grid item xs={8}>
+          <Grid item xs={12} lg={8}>
             <SBox>
               <TypographyTitle>
                 Está em conformidade com o Regulamento Geral de Proteção de
@@ -24,7 +24,7 @@ export default function Sec8() {
               </TypographyText>
               <Box align="end">
                 <Button>Saber mais</Button>
-              </Box> 
+              </Box>
             </SBox>
           </Grid>
         </Grid>

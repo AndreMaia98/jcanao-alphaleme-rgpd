@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <filter id="Retângulo_8522" x="0" y="0" width="64" height="64" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Componente_19_1" data-name="Componente 19 – 1" transform="translate(9 6)">
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Retângulo_8522)">
+      <rect id="Retângulo_8522-2" data-name="Retângulo 8522" width="46" height="46" rx="5" transform="translate(9 6)" fill="#0092f6"/>
+    </g>
+    <path id="Icon_awesome-linkedin-in" data-name="Icon awesome-linkedin-in" d="M8.058,36H.595V11.965H8.058ZM4.323,8.687A4.343,4.343,0,1,1,8.645,4.323,4.359,4.359,0,0,1,4.323,8.687ZM35.993,36H28.545V24.3c0-2.788-.056-6.364-3.881-6.364-3.881,0-4.475,3.03-4.475,6.164V36H12.734V11.965h7.158v3.279H20a7.843,7.843,0,0,1,7.062-3.881C34.612,11.363,36,16.337,36,22.8V36Z" transform="translate(5 5)" fill="#fff"/>
+  </g>
+</svg>

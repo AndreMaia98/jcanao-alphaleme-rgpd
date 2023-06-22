@@ -160,7 +160,8 @@ export default function Sec4() {
           >
             <Grid
               item
-              xs={7}
+              xs={12}
+              lg={7}
               sx={{
                 display: "flex",
                 alignItems: "center",

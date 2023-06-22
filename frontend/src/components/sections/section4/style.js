@@ -24,5 +24,8 @@ export const TypographyTitle = styled(Typography)`
     font-size: 48px;
     font-family: Poppins Medium;
     color: var(--black);
+    @media (max-width: 768px) {
+      font-size: 32px;
+    }
   }
 `;

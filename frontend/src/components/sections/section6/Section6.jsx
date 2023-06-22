@@ -23,7 +23,7 @@ export default function Sec6() {
               <Title>Sabia que</Title>
             </Grid>
             <Grid container>
-              <Grid item xs={6}>
+              <Grid item xs={12} lg={6}>
                 <img src={Warning} alt="" />
                 <TypographyTitle>
                   Infrações muito graves podem ser punidas com coima de €10.000
@@ -52,7 +52,12 @@ export default function Sec6() {
                   das coimas reduzidos a metade.
                 </TypographyText>
               </Grid>
-              <Grid item xs={6}>
+              <Grid
+                item
+                xs={12}
+                lg={6}
+                sx={{ marginTop: { xs: "33px", lg: "" } }}
+              >
                 <img src={Warning2} alt="" />
                 <TypographyTitle>
                   Infrações graves podem ser punidas com coima de €3.000 a
