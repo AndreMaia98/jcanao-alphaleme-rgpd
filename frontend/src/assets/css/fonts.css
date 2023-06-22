@@ -83,13 +83,13 @@
 }
 
 @font-face {
-    font-family: "Poppins Semi Bold";
+    font-family: "Poppins SemiBold";
     src: url("../fonts/Poppins-SemiBold.ttf") format("truetype");
     font-weight: normal;
 }
 
 @font-face {
-    font-family: "Poppins Semi Bold Italic";
+    font-family: "Poppins SemiBold Italic";
     src: url("../fonts/Poppins-SemiBoldItalic.ttf") format("truetype");
     font-weight: normal;
 }
