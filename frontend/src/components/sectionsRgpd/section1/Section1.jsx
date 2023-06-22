@@ -1,4 +1,4 @@
-import { Container } from "@mui/material";
+import { Box, Container } from "@mui/material";
 import React from "react";
 import { TypographyTitle, TypographySubTitle, SBox } from "./style";
 import BG from "../../../assets/images/bgRGPD.png";
@@ -32,13 +32,15 @@ export default function Sec1() {
           Garanta o cumprimento Jurídico em RGPD
         </TypographySubTitle>
         <SBox>
-          <Title>Concebemos o seu plano RGPD</Title>
-          <Text>
-            Todos os nossos planos tem dois objetivos principais. Garantir o
-            cumprimento de todas as obrigações legais referentes ao RGPD.
-            Assegurar que a implementação do primeiro objetivo afeta o mínimo
-            possível o normal funcionamento do negócio.
-          </Text>
+          <Box sx={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+            <Title>Concebemos o seu plano RGPD</Title>
+            <Text>
+              Todos os nossos planos tem dois objetivos principais. Garantir o
+              cumprimento de todas as obrigações legais referentes ao RGPD.
+              Assegurar que a implementação do primeiro objetivo afeta o mínimo
+              possível o normal funcionamento do negócio.
+            </Text>
+          </Box>
           <Button>Saber Mais</Button>
         </SBox>
       </Container>

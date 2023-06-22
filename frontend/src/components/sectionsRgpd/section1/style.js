@@ -43,5 +43,8 @@ export const SBox = styled(Box)`
     flex-direction: column;
     justify-content: center;
     gap: 16px;
+    height: 328px;
+    display: flex;
+    justify-content: space-between;
   }
 `;
