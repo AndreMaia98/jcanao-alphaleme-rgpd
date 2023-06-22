@@ -2,6 +2,7 @@ import { Box, Container, Grid } from "@mui/material";
 import React from "react";
 import { TypographyText, TypographyTitle, SBox } from "./style";
 import Button from "../../ui/buttons/buttonwhite";
+import DotBg from "../../../assets/images/253.svg";
 
 export default function Sec8() {
   return (
@@ -9,8 +10,23 @@ export default function Sec8() {
       <Container maxWidth="lg" disableGutters>
         <Grid
           container
-          sx={{ marginTop: "580px", display: "flex", justifyContent: "center" }}
+          sx={{
+            marginTop: "580px",
+            display: "flex",
+            justifyContent: "center",
+            position: "relative",
+          }}
         >
+          <img
+            src={DotBg}
+            alt="dot"
+            style={{
+              position: "absolute",
+              top: "-43%",
+              left: "-30%",
+              zIndex: -1,
+            }}
+          />
           <Grid item xs={12} lg={8}>
             <SBox>
               <TypographyTitle>

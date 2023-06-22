@@ -6,6 +6,7 @@ import Task from "../../../assets/logo/task.png";
 import Button from "../../ui/buttons/button";
 import Text from "../../ui/typographys/text";
 import { TypographyTitle, TypographySubTitle } from "./style";
+import DotBg from "../../../assets/images/253.svg";
 
 export default function Sec7() {
   return (
@@ -18,8 +19,19 @@ export default function Sec7() {
             flexDirection: "column",
             alignItems: "center",
             marginTop: "297px",
+            position: "relative",
           }}
         >
+          <img
+            src={DotBg}
+            alt="dot"
+            style={{
+              position: "absolute",
+              top: "50%",
+              right: "-76%",
+              zIndex: -1,
+            }}
+          />
           <Grid item xs={12} align="center">
             <TypographyTitle>
               Como ajudamos as empresas a suceder

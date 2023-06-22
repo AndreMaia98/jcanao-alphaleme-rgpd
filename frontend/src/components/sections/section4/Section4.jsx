@@ -6,6 +6,8 @@ import percentage40 from "../../../assets/images/40.png";
 import percentage83 from "../../../assets/images/83.png";
 import percentage50 from "../../../assets/images/50.png";
 import hexa257 from "../../../assets/images/257.png";
+import bg271 from "../../../assets/images/271.svg";
+import bg272 from "../../../assets/images/272.svg";
 
 export default function Sec4() {
   return (
@@ -18,6 +20,7 @@ export default function Sec4() {
             alignItems: "center",
             marginTop: "315px",
             justifyContent: "center",
+            position: "relative",
           }}
         >
           <Grid
@@ -31,6 +34,11 @@ export default function Sec4() {
               justifyContent: "center",
             }}
           >
+            <img
+              style={{ position: "absolute", bottom: "-480px", left: "-450px" }}
+              src={bg271}
+              alt=""
+            />
             <img src={percentage27} alt="" />
           </Grid>
           <Grid item xs={12} md={10} lg={6}>
@@ -78,7 +86,12 @@ export default function Sec4() {
             <img src={percentage40} alt="" />
           </Grid>
         </Grid>
-        <Grid container sx={{ marginTop: "225px" }}>
+        <Grid container sx={{ marginTop: "225px", position: "relative" }}>
+          <img
+            style={{ position: "absolute", bottom: "-550px", right: "-550px" }}
+            src={bg272}
+            alt=""
+          />
           <Grid item xs={12} align="center">
             <Grid item xs={8.5}>
               <TypographyTitle>
