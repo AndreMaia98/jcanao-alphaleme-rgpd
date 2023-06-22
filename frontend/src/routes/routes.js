@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import Contact from "../pages/Contact";
 import SecurityError from "../pages/errors/ErrorSecurity";
 import Cookies from "../components/cookies";
+import RGPD from "../pages/Rgpd";
 
 function AppRoutes() {
   return (
@@ -12,6 +13,7 @@ function AppRoutes() {
       <Route path="/" element={<Home />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/cookies" element={<Cookies />} />
+      <Route path="/rgpd" element={<RGPD />} />
     </Routes>
   );
 }
