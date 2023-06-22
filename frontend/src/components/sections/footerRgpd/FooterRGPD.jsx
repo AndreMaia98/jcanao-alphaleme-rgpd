@@ -1,12 +1,12 @@
 import { Container, Grid } from "@mui/material";
 import React from "react";
-import FooterBG from "../../../assets/images/footer1.svg";
+import FooterBG from "../../../assets/images/ciber_bottom.png";
 import { TypographyText, TypographyTitles, TypographyDesc } from "./style";
 import Alphaleme from "../../../assets/logo/alpha_blue.svg";
 import { Link } from "react-router-dom";
 import FooterBottom from "../../../layouts/Footer/components/AdditionalInfo";
 
-export default function Footer2() {
+export default function Footer1() {
   return (
     <>
       <Container
@@ -25,7 +25,12 @@ export default function Footer2() {
           sx={{ paddingTop: "175px", paddingBottom: "47px" }}
         >
           <Grid container>
-            <Grid item xs={12} lg={6}>
+            <Grid
+              item
+              xs={12}
+              lg={6}
+              sx={{ background: "var(--white)", padding: "32px" }}
+            >
               <img src={Alphaleme} alt="" />
               <TypographyText>
                 Garanta a segurança dos seus dados. O maior valor de qualquer
@@ -40,6 +45,8 @@ export default function Footer2() {
               display: "flex",
               justifyContent: "end",
               gap: "26px",
+              background: "var(--white)",
+              padding: "32px",
             }}
           >
             <Grid item xs={12} lg={2}>
