@@ -2,6 +2,9 @@ import { Box, Container, Grid } from "@mui/material";
 import React from "react";
 import { TypographyBox, SBox, TypographyText, TypographyTitle } from "./style";
 import Button from "../../ui/buttons/button";
+import Parte1 from "../../../assets/download/boas-praticas1.pdf";
+import Parte2 from "../../../assets/download/boas-praticas2.pdf";
+import Parte3 from "../../../assets/download/boas-praticas3.pdf";
 
 export default function Sec4() {
   return (
@@ -34,19 +37,25 @@ export default function Sec4() {
                 marginBottom: "33px",
               }}
             >
-              <SBox>
-                <TypographyBox>
-                  Parte I – Deveres e responsabilidades das organizações
-                </TypographyBox>
-              </SBox>
-              <SBox>
-                <TypographyBox>
-                  Parte II – Contributos para políticas e procedimentos
-                </TypographyBox>
-              </SBox>
-              <SBox>
-                <TypographyBox>Parte III – Segurança física</TypographyBox>
-              </SBox>
+              <a href={Parte1} download style={{ textDecoration: "none" }}>
+                <SBox>
+                  <TypographyBox>
+                    Parte I – Deveres e responsabilidades das organizações
+                  </TypographyBox>
+                </SBox>
+              </a>
+              <a href={Parte2} download style={{ textDecoration: "none" }}>
+                <SBox>
+                  <TypographyBox>
+                    Parte II – Contributos para políticas e procedimentos
+                  </TypographyBox>
+                </SBox>
+              </a>
+              <a href={Parte3} download style={{ textDecoration: "none" }}>
+                <SBox>
+                  <TypographyBox>Parte III – Segurança física</TypographyBox>
+                </SBox>
+              </a>
             </Box>
             <TypographyText>
               Com a nossa ajuda não necessita de se preocupar com estes
