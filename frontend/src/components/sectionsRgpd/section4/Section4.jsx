@@ -2,9 +2,7 @@ import { Box, Container, Grid } from "@mui/material";
 import React from "react";
 import { TypographyBox, SBox, TypographyText, TypographyTitle } from "./style";
 import Button from "../../ui/buttons/button";
-import Parte1 from "../../../assets/download/boas-praticas1.pdf";
-import Parte2 from "../../../assets/download/boas-praticas2.pdf";
-import Parte3 from "../../../assets/download/boas-praticas3.pdf";
+import { Link } from "react-router-dom";
 
 export default function Sec4() {
   return (
@@ -37,25 +35,40 @@ export default function Sec4() {
                 marginBottom: "33px",
               }}
             >
-              <a href={Parte1} download style={{ textDecoration: "none" }}>
+              <Link
+                to="https://www.gns.gov.pt/docs/boas-praticas-i.pdf"
+                target="
+                _blank"
+                style={{ textDecoration: "none" }}
+              >
                 <SBox>
                   <TypographyBox>
                     Parte I – Deveres e responsabilidades das organizações
                   </TypographyBox>
                 </SBox>
-              </a>
-              <a href={Parte2} download style={{ textDecoration: "none" }}>
+              </Link>
+              <Link
+                to="https://www.gns.gov.pt/docs/boas-praticas-ii.pdf"
+                target="
+                _blank"
+                style={{ textDecoration: "none" }}
+              >
                 <SBox>
                   <TypographyBox>
                     Parte II – Contributos para políticas e procedimentos
                   </TypographyBox>
                 </SBox>
-              </a>
-              <a href={Parte3} download style={{ textDecoration: "none" }}>
+              </Link>
+              <Link
+                to="https://www.gns.gov.pt/docs/boas-praticas-iii.pdf"
+                target="
+                _blank"
+                style={{ textDecoration: "none" }}
+              >
                 <SBox>
                   <TypographyBox>Parte III – Segurança física</TypographyBox>
                 </SBox>
-              </a>
+              </Link>
             </Box>
             <TypographyText>
               Com a nossa ajuda não necessita de se preocupar com estes
