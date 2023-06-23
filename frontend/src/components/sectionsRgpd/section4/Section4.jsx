@@ -6,13 +6,17 @@ import Button from "../../ui/buttons/button";
 export default function Sec4() {
   return (
     <Container maxWidth="false">
-      <Container maxWidth="lg" disableGutters sx={{ marginTop: "265px" }}>
+      <Container
+        maxWidth="lg"
+        disableGutters
+        sx={{ marginTop: "265px", marginBottom: "383px" }}
+      >
         <Grid
           container
           disableGutters
           sx={{ display: "flex", justifyContent: "center" }}
         >
-          <Grid item xs={6}>
+          <Grid item xs={12} lg={6}>
             <TypographyTitle>Boas Práticas</TypographyTitle>
             <TypographyText>
               Estes documentos são um complemento aos requisitos técnicos
@@ -22,7 +26,7 @@ export default function Sec4() {
             </TypographyText>
             <Box
               sx={{
-                marginLeft: "33px",
+                marginLeft: { xs: "0px", lg: "33px" },
                 display: "flex",
                 flexDirection: "column",
                 gap: "8px",
