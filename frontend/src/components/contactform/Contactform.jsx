@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   GridContainer1,
   GridContainer2,
@@ -11,8 +11,9 @@ import {
   SCheckbox,
   STypographyCheck,
   SButtonSend,
-} from "../style.jsx";
-import { MenuItem, Grid, CircularProgress } from "@mui/material";
+  SContainerForm,
+} from "./style.js";
+import { MenuItem, Grid, CircularProgress, Modal } from "@mui/material";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 
@@ -60,7 +61,7 @@ export default function ContactForm({ handleOpenMessage }) {
   };
 
   return (
-    <>
+    <SContainerForm maxWidth="lg">
       <Grid container sx={{ display: "flex", gap: "32px" }}>
         <GridContainer1 item xs={12} lg>
           <STypographyContactTitle>
@@ -195,6 +196,6 @@ export default function ContactForm({ handleOpenMessage }) {
           </Grid>
         </GridContainer2>
       </Grid>
-    </>
+    </SContainerForm>
   );
 }

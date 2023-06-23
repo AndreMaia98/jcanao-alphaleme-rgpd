@@ -1,6 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { SButton } from "./style";
+import ContactForm from "../../../contactform";
 
 export default function Home({ children }) {
-  return <SButton>{children}</SButton>;
+  const [showForm, setShowForm] = useState(false);
+
+  const handleShowForm = () => {
+    setShowForm(!showForm);
+  };
+
+  return (
+    <>
+      <SButton onClick={handleShowForm}>{children}</SButton>
+      {showForm && <ContactForm />}
+    </>
+  );
 }

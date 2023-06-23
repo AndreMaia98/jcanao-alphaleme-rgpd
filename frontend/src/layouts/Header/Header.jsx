@@ -1,14 +1,14 @@
 import React from "react";
-import { SContainer, SButton, Simg } from "./styles";
+import { SContainer, Simg } from "./styles";
 import { Grid, Container } from "@mui/material";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import Logo from "../../assets/logo/Alphaleme.png";
 
 export default function Header() {
-  const buttonData = [
-    { name: "Sobre Nós", link: "/about" },
-    { name: "Serviços", link: "/services" },
-  ];
+  // const buttonData = [
+  //   { name: "Sobre Nós", link: "/about" },
+  //   { name: "Serviços", link: "/services" },
+  // ];
 
   return (
     <SContainer maxWidth={false}>

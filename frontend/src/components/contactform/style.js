@@ -1,3 +1,13 @@
+import {
+  Button,
+  Checkbox,
+  Container,
+  FormLabel,
+  Grid,
+  Input,
+  Select,
+  Typography,
+} from "@mui/material";
 import styled from "styled-components";
 
 export const SImg3 = styled.img`
@@ -264,5 +274,18 @@ export const SButtonSend = styled(Button)`
       margin-top: 16px;
       width: 100%;
     }
+  }
+`;
+
+export const SContainerForm = styled(Container)`
+  && {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    padding: 32px;
+    backdrop-filter: blur(30px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 `;
