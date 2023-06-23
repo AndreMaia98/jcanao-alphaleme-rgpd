@@ -20,7 +20,7 @@ export default function Sec7() {
             }}
           >
             <Grid item xs={4}></Grid>
-            <Grid item xs={6}>
+            <Grid item xs={6.5}>
               <SBox>
                 <TypographyTitle>
                   Está em conformidade com o Regime Jurídico de Segurança do
