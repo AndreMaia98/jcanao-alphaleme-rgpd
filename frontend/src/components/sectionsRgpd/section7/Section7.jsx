@@ -13,6 +13,7 @@ export default function Sec7() {
             xs={10}
             sx={{
               background: "var(--blue)",
+              boxShadow: " 0px 0px 6px var(--blue-second)",
               padding: "184px 0px",
               borderTopRightRadius: "8px",
               borderBottomRightRadius: "8px",

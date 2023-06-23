@@ -50,6 +50,8 @@ export default function Sec5() {
           <Grid
             item
             xs={3}
+            borderRight={2}
+            borderColor={"white"}
             sx={{
               display: "flex",
               justifyContent: "center",
@@ -62,14 +64,14 @@ export default function Sec5() {
               Contraordenações graves
             </TypographyTableTitle2>
           </Grid>
-          <Grid item xs={3}>
+          <Grid item xs={3} borderRight={2} borderColor={"white"}>
             <TypographyTableText>
               5000€ a 20.000.000€ ou 4% do volume de negócios anual, a nível
               mundial, conforme o que for mais elevado
             </TypographyTableText>
           </Grid>
 
-          <Grid item xs={3}>
+          <Grid item xs={3} borderRight={2} borderColor={"white"}>
             <TypographyTableText>
               2000€ a 2.000.000€ ou 4% do volume de negócios anual, a nível
               mundial, conforme o que for mais elevado
@@ -83,6 +85,8 @@ export default function Sec5() {
           <Grid
             item
             xs={3}
+            borderRight={2}
+            borderColor={"white"}
             sx={{
               display: "flex",
               justifyContent: "center",
@@ -95,14 +99,14 @@ export default function Sec5() {
               Contraordenações muito graves
             </TypographyTableTitle2>
           </Grid>
-          <Grid item xs={3}>
+          <Grid item xs={3} borderRight={2} borderColor={"white"}>
             <TypographyTableText>
               2500€ a 10.000.000€ ou 2% do volume de negócios anual, a nível
               mundial
             </TypographyTableText>
           </Grid>
 
-          <Grid item xs={3}>
+          <Grid item xs={3} borderRight={2} borderColor={"white"}>
             <TypographyTableText>
               1000€ a 1.000.000€ ou 2% do volume de negócios anual, a nível
               mundial

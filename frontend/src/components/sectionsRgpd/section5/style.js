@@ -39,6 +39,9 @@ export const SGrid = styled(Grid)`
     padding: 16px 0px;
     margin-bottom: 3px;
     height: 132px;
+    &:hover {
+      background: var(--light-blue2);
+    }
   }
 `;
 
@@ -49,6 +52,9 @@ export const SGrid2 = styled(Grid)`
     box-shadow: 0px 3px 6px #00000029;
     padding: 16px 0px;
     height: 132px;
+    &:hover {
+      background: var(--light-blue2);
+    }
   }
 `;
 
