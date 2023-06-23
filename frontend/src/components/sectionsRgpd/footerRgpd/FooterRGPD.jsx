@@ -75,21 +75,15 @@ export default function Footer1() {
             </Grid>
             <Grid item xs={12} lg={2}>
               <TypographyTitles>Legal</TypographyTitles>
-              <TypographyDesc>
-                <Link to="" target="_blank" style={{ textDecoration: "none" }}>
-                  Política de Privacidade
-                </Link>
-              </TypographyDesc>
-              <TypographyDesc>
-                <Link to="" target="_blank" style={{ textDecoration: "none" }}>
-                  Termos e Condições
-                </Link>
-              </TypographyDesc>
-              <TypographyDesc>
-                <Link to="" target="_blank" style={{ textDecoration: "none" }}>
-                  Livro de Reclamações
-                </Link>
-              </TypographyDesc>
+              <Link to="" target="_blank" style={{ textDecoration: "none" }}>
+                <TypographyDesc>Política de Privacidade</TypographyDesc>
+              </Link>
+              <Link to="" target="_blank" style={{ textDecoration: "none" }}>
+                <TypographyDesc>Termos e Condições</TypographyDesc>
+              </Link>
+              <Link to="" target="_blank" style={{ textDecoration: "none" }}>
+                <TypographyDesc>Livro de Reclamações</TypographyDesc>
+              </Link>
             </Grid>
           </Grid>
         </Container>
