@@ -1,4 +1,4 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Container, Grid } from "@mui/material";
 import React from "react";
 import Title from "../../ui/typographys/title";
 import {
@@ -174,7 +174,7 @@ export default function Sec5() {
                 >
                   Apoie-se
                 </span>{" "}
-                em nós e
+                em nós e{" "}
                 <span
                   style={{
                     fontFamily: "Poppins SemiBold",

@@ -69,6 +69,9 @@ export default function ExpandBox() {
                     pl: "20px",
                     "& .MuiListItem-root": {
                       display: "list-item",
+                      "&::marker": {
+                        color: "var(--blue)",
+                      },
                     },
                   }}
                 >
@@ -109,6 +112,9 @@ export default function ExpandBox() {
                     pl: "20px",
                     "& .MuiListItem-root": {
                       display: "list-item",
+                      "&::marker": {
+                        color: "var(--blue)",
+                      },
                     },
                   }}
                 >

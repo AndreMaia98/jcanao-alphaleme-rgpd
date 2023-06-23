@@ -35,6 +35,9 @@ export default function Sec6() {
                     pl: 5,
                     "& .MuiListItem-root": {
                       display: "list-item",
+                      "&::marker": {
+                        color: "var(--blue)",
+                      },
                     },
                   }}
                 >
@@ -69,6 +72,9 @@ export default function Sec6() {
                     pl: 5,
                     "& .MuiListItem-root": {
                       display: "list-item",
+                      "&::marker": {
+                        color: "var(--blue)",
+                      },
                     },
                   }}
                 >

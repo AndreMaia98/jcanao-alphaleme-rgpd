@@ -60,6 +60,9 @@ export default function Sec2() {
                   color: "var(--dark)",
                   "& .MuiListItem-root": {
                     display: "list-item",
+                    "&::marker": {
+                      color: "var(--blue)",
+                    },
                   },
                 }}
               >
