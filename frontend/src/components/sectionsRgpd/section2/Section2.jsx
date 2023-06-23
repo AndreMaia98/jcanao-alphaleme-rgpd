@@ -12,7 +12,7 @@ export default function Sec2() {
       sx={{
         background: "var(--white)",
         paddingTop: { xs: "64px", lg: "315px" },
-        paddingBottom: { xs: "64px", lg: "285px" },
+        paddingBottom: { xs: "64px", lg: "383px" },
       }}
     >
       <Container maxWidth="lg" disableGutters>
