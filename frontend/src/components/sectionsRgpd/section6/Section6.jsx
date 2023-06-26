@@ -9,9 +9,9 @@ export default function Sec6() {
       maxWidth="false"
       sx={{
         background: `url(${BottomRgpd})`,
-        marginTop: "442px",
-        paddingTop: " 296px",
-        paddingBottom: "480px",
+        marginTop: { xs: "0px", lg: "442px" },
+        paddingTop: { xs: "64px", lg: "296px" },
+        paddingBottom: { xs: "64px", lg: "480px" },
       }}
     >
       <Container maxWidth="lg" disableGutters>
@@ -24,7 +24,7 @@ export default function Sec6() {
             justifyContent: "center",
           }}
         >
-          <Grid item xs={5} align="center">
+          <Grid item xs={12} lg={5} align="center">
             <STypography>9 Princípios para conformidade com o RGPD</STypography>
           </Grid>
         </Grid>

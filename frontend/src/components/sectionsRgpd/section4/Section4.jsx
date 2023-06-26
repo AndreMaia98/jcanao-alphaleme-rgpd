@@ -10,7 +10,10 @@ export default function Sec4() {
       <Container
         maxWidth="lg"
         disableGutters
-        sx={{ marginTop: "265px", marginBottom: "383px" }}
+        sx={{
+          marginTop: { xs: "64px", lg: "265px" },
+          marginBottom: { xs: "64px", lg: "383px" },
+        }}
       >
         <Grid
           container

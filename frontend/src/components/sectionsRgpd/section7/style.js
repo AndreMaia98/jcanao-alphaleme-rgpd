@@ -15,6 +15,9 @@ export const TypographyTitle = styled(Typography)`
     font-weight: 500;
     color: var(--blue);
     margin-bottom: 26px;
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
   }
 `;
 
@@ -25,6 +28,9 @@ export const TypographyText = styled(Typography)`
     font-weight: 400;
     color: var(--black);
     margin-bottom: 32px;
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
   }
 `;
 

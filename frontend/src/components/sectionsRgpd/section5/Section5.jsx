@@ -11,6 +11,8 @@ import {
   TypographyTextBlue,
   TypographyTitle,
   TypographyBottom,
+  SGridMobile,
+  SGrid2Mobile,
 } from "./style";
 import warning from "../../../assets/icons/warning.svg";
 import warning2 from "../../../assets/icons/warning2.svg";
@@ -20,8 +22,12 @@ export default function Sec5() {
   return (
     <Container maxWidth="false">
       <Container maxWidth="lg" disableGutters>
-        <Grid container disableGutters>
-          <Grid item xs={3}>
+        <Grid
+          container
+          disableGutters
+          sx={{ display: { xs: "none", lg: "flex" } }}
+        >
+          <Grid item xs={12} lg={3}>
             <Title>Coimas por inconformidade</Title>
           </Grid>
           <Grid
@@ -46,7 +52,11 @@ export default function Sec5() {
             <TypographyTableTitle>Pessoas Singulares</TypographyTableTitle>
           </Grid>
         </Grid>
-        <SGrid container disableGutters>
+        <SGrid
+          container
+          disableGutters
+          sx={{ display: { xs: "none", lg: "flex" } }}
+        >
           <Grid
             item
             xs={3}
@@ -81,7 +91,11 @@ export default function Sec5() {
             <TypographyTableText>1000€ a 500.000€</TypographyTableText>
           </Grid>
         </SGrid>
-        <SGrid2 container disableGutters>
+        <SGrid2
+          container
+          disableGutters
+          sx={{ display: { xs: "none", lg: "flex" } }}
+        >
           <Grid
             item
             xs={3}
@@ -116,9 +130,37 @@ export default function Sec5() {
             <TypographyTableText>500€ a 250.000€</TypographyTableText>
           </Grid>
         </SGrid2>
+        <Grid
+          item
+          xs={12}
+          lg={3}
+          sx={{ display: { xs: "block", lg: "none" }, marginBottom: "8px" }}
+        >
+          <Title>Coimas por inconformidade</Title>
+        </Grid>
+        <SGridMobile sx={{ display: { xs: "block", lg: "none" } }}>
+          <TypographyTableTitle2>
+            <img src={warning} alt="" />
+            Contraordenações graves
+          </TypographyTableTitle2>
+          <TypographyTableText>
+            As coimas podem ir dos 2000€ a 20.000.000€ ou 4% do volume de
+            negócios anual, a nível mundial, conforme o que for mais elevado
+          </TypographyTableText>
+        </SGridMobile>
+        <SGrid2Mobile sx={{ display: { xs: "block", lg: "none" } }}>
+          <TypographyTableTitle2>
+            <img src={warning2} alt="" />
+            Contraordenações muito graves
+          </TypographyTableTitle2>
+          <TypographyTableText>
+            As coimas podem ir dos 1000€ a 10.000.000€ ou 2% do volume de
+            negócios anual, a nível mundial, conforme o que for mais elevado
+          </TypographyTableText>
+        </SGrid2Mobile>
         <Grid container disableGutters sx={{ marginTop: "64px" }}>
           <Grid item xs={12}>
-            <Grid item xs={6}>
+            <Grid item xs={12} lg={6}>
               <TypographyText>
                 Embora estas coimas possam atingir valores bastante elevados, em
                 nada se comparam com os possíveis custos de uma violação de
@@ -127,12 +169,12 @@ export default function Sec5() {
             </Grid>
           </Grid>
           <Grid item xs={12}>
-            <Grid item xs={6}>
+            <Grid item xs={12} lg={6}>
               <TypographyTitle>Ação legal</TypographyTitle>
             </Grid>
           </Grid>
           <Grid item xs={12}>
-            <Grid item xs={6}>
+            <Grid item xs={12} lg={6}>
               <TypographyText>
                 Ao abrigo dos regulamentos de proteção de dados, as organizações
                 são legalmente obrigadas a demonstrar que tomaram todas as
@@ -144,7 +186,7 @@ export default function Sec5() {
             </Grid>
           </Grid>
           <Grid item xs={12}>
-            <Grid item xs={6}>
+            <Grid item xs={12} lg={6}>
               <TypographyTextBlue>
                 A violação de dados pessoais da Equifax afetou mais de 145
                 milhões de pessoas em todo o mundo, tendo custado 1.4 biliões de
@@ -153,7 +195,7 @@ export default function Sec5() {
             </Grid>
           </Grid>
           <Grid item xs={12}>
-            <Grid item xs={6}>
+            <Grid item xs={12} lg={6}>
               <TypographyText>
                 Não existem sistemas impenetráveis, pelo que é sempre possível
                 sofrer de uma violação de dados, no entanto, podemos atenuar o
@@ -167,7 +209,7 @@ export default function Sec5() {
         </Box>
         <Grid container sx={{ marginTop: "250px" }}>
           <Grid item xs={12} sx={{ display: "flex", justifyContent: "center" }}>
-            <Grid item xs={8.5}>
+            <Grid item xs={12} lg={8.5}>
               <TypographyBottom>
                 <span
                   style={{

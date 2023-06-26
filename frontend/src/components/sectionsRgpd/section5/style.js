@@ -19,6 +19,10 @@ export const TypographyTableTitle2 = styled(Typography)`
     display: flex;
     width: 194px;
     gap: 8px;
+    @media (max-width: 768px) {
+      width: 100%;
+      text-align: left;
+    }
   }
 `;
 
@@ -28,6 +32,10 @@ export const TypographyTableText = styled(Typography)`
     font-family: Poppins Regular;
     color: var(--black);
     padding: 0px 16px;
+    @media (max-width: 768px) {
+      width: 100%;
+      margin-top: 16px;
+    }
   }
 `;
 
@@ -45,6 +53,29 @@ export const SGrid = styled(Grid)`
   }
 `;
 
+export const SGridMobile = styled(Grid)`
+  && {
+    background: var(--white);
+    border-radius: 8px 0px 0px 0px;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 16px 0px;
+    margin-bottom: 3px;
+    height: 132px;
+    &:hover {
+      background: var(--light-blue2);
+    }
+    @media (max-width: 768px) {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      padding: 16px;
+    }
+  }
+`;
+
 export const SGrid2 = styled(Grid)`
   && {
     background: var(--white);
@@ -54,6 +85,29 @@ export const SGrid2 = styled(Grid)`
     height: 132px;
     &:hover {
       background: var(--light-blue2);
+    }
+  }
+`;
+
+export const SGrid2Mobile = styled(Grid)`
+  && {
+    background: var(--white);
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 16px 0px;
+    height: 132px;
+    margin-top: 8px;
+    &:hover {
+      background: var(--light-blue2);
+    }
+    @media (max-width: 768px) {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 8px;
+      padding: 16px;
     }
   }
 `;

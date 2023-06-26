@@ -35,5 +35,9 @@ export const TypographyBox = styled(Typography)`
     font-weight: 400;
     font-family: Poppins Regular;
     color: var(--blue);
+    @media (max-width: 768px) {
+      font-size: 16px;
+      width: 100%;
+    }
   }
 `;

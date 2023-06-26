@@ -10,18 +10,23 @@ export default function Sec7() {
         <Grid container maxWidth="false">
           <Grid
             item
-            xs={10}
+            xs={12}
+            lg={10}
             sx={{
               background: "var(--blue)",
               boxShadow: " 0px 0px 6px var(--blue-second)",
-              padding: "184px 0px",
               borderTopRightRadius: "8px",
               borderBottomRightRadius: "8px",
               display: "flex",
+              padding: { xs: "16px", lg: " 184px 0px" },
             }}
           >
-            <Grid item xs={4}></Grid>
-            <Grid item xs={6.5}>
+            <Grid
+              item
+              xs={4}
+              sx={{ display: { xs: "none", lg: "block" } }}
+            ></Grid>
+            <Grid item xs={12} lg={6.5}>
               <SBox>
                 <TypographyTitle>
                   Está em conformidade com o Regime Jurídico de Segurança do
