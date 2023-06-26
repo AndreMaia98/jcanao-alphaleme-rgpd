@@ -3,16 +3,20 @@ import { SButton } from "./style";
 import ContactForm from "../../../contactform";
 
 export default function Home({ children }) {
-  const [showForm, setShowForm] = useState(false);
+  const [openModal, setOpenModal] = useState(false);
 
-  const handleShowForm = () => {
-    setShowForm(!showForm);
+  const handleOpen = () => {
+    setOpenModal(true);
+  };
+
+  const handleClose = () => {
+    setOpenModal(false);
   };
 
   return (
     <>
-      <SButton onClick={handleShowForm}>{children}</SButton>
-      {showForm && <ContactForm />}
+      <SButton onClick={handleOpen}>{children}</SButton>
+      {openModal && <ContactForm openModal={openModal} handleClose={handleClose} /> }
     </>
   );
 }
