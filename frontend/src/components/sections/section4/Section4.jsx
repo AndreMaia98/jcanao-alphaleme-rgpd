@@ -1,6 +1,11 @@
 import { Container, Grid } from "@mui/material";
 import React from "react";
-import { TypographyText, TypographyTitle, TypographyText2 } from "./style";
+import {
+  TypographyText,
+  TypographyTitle,
+  TypographyText2,
+  SImg,
+} from "./style";
 import percentage27 from "../../../assets/images/27.png";
 import percentage40 from "../../../assets/images/40.png";
 import percentage83 from "../../../assets/images/83.png";
@@ -34,12 +39,24 @@ export default function Sec4() {
               justifyContent: "center",
             }}
           >
-            <img
-              style={{ position: "absolute", bottom: "-480px", left: "-450px" }}
+            <SImg
+              style={{
+                position: "absolute",
+                bottom: "-480px",
+                left: "-450px",
+              }}
               src={bg271}
               alt=""
             />
-            <img src={percentage27} alt="" />
+            <img
+              src={percentage27}
+              alt=""
+              style={{
+                "@media (max-width: 768px)": {
+                  width: "50px",
+                },
+              }}
+            />
           </Grid>
           <Grid item xs={12} md={10} lg={6}>
             <TypographyText>
@@ -87,13 +104,17 @@ export default function Sec4() {
           </Grid>
         </Grid>
         <Grid container sx={{ marginTop: "225px", position: "relative" }}>
-          <img
-            style={{ position: "absolute", bottom: "-550px", right: "-550px" }}
+          <SImg
+            style={{
+              position: "absolute",
+              bottom: "-550px",
+              right: "-550px",
+            }}
             src={bg272}
             alt=""
           />
           <Grid item xs={12} align="center">
-            <Grid item xs={8.5}>
+            <Grid item xs={12} lg={8.5}>
               <TypographyTitle>
                 Custo médio global de violações de dados atinge máximo histório
               </TypographyTitle>

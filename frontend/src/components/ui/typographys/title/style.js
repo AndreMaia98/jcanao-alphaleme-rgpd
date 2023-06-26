@@ -8,5 +8,8 @@ export const TitleTypography = styled(Typography)`
     font-family: Poppins SemiBold;
     color: var(--blue);
     text-align: left;
+    @media (max-width: 768px) {
+      font-size: 26px;
+    }
   }
 `;

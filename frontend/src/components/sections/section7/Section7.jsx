@@ -5,7 +5,7 @@ import People from "../../../assets/logo/ios-people.png";
 import Task from "../../../assets/logo/task.png";
 import Button from "../../ui/buttons/button";
 import Text from "../../ui/typographys/text";
-import { TypographyTitle, TypographySubTitle } from "./style";
+import { TypographyTitle, TypographySubTitle, SImg } from "./style";
 import DotBg from "../../../assets/images/253.svg";
 
 export default function Sec7() {
@@ -22,7 +22,7 @@ export default function Sec7() {
             position: "relative",
           }}
         >
-          <img
+          <SImg
             src={DotBg}
             alt="dot"
             style={{

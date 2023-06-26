@@ -11,8 +11,9 @@ export const TypographyTitle = styled(Typography)`
     margin-bottom: 16px;
     margin-top: 200px;
     @media (max-width: 768px) {
-      font-size: 64px;
+      font-size: 46px;
       margin-top: 100px;
+      width: 100%;
     }
   }
 `;
@@ -25,7 +26,8 @@ export const TypographySubTitle = styled(Typography)`
     color: var(--blue);
     text-align: left;
     @media (max-width: 768px) {
-      font-size: 28px;
+      font-size: 26px;
+      width: 100%;
     }
   }
 `;

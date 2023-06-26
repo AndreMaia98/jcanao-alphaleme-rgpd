@@ -29,6 +29,9 @@ export const BoxExpanded = styled(Box)`
   left: 0;
   border: 1px solid var(--blue);
   width: 542px;
+  @media (max-width: 768px) {
+    width: 308px;
+  }
 `;
 
 export const TypographyNumber = styled(Typography)`
@@ -47,6 +50,9 @@ export const TypographyTitle = styled(Typography)`
     font-weight: 500;
     font-family: Poppins Medium;
     color: var(--blue);
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
   }
 `;
 

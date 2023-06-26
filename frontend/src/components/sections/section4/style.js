@@ -25,7 +25,13 @@ export const TypographyTitle = styled(Typography)`
     font-family: Poppins Medium;
     color: var(--black);
     @media (max-width: 768px) {
-      font-size: 32px;
+      font-size: 24px;
     }
+  }
+`;
+
+export const SImg = styled.img`
+  @media (max-width: 768px) {
+    display: none;
   }
 `;
