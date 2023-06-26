@@ -1,4 +1,4 @@
-import { Container, Grid, List } from "@mui/material";
+import { Box, Container, Grid, List } from "@mui/material";
 import React from "react";
 import {
   SBox,
@@ -24,11 +24,13 @@ export default function Sec6() {
             </Grid>
             <Grid container>
               <Grid item xs={12} lg={6}>
-                <img src={Warning} alt="" />
-                <TypographyTitle>
-                  Infrações muito graves podem ser punidas com coima de €10.000
-                  a €50.000
-                </TypographyTitle>
+                <Box sx={{ display: "flex", gap: "8px" }}>
+                  <img src={Warning} alt="" />
+                  <TypographyTitle>
+                    Infrações muito graves podem ser punidas com coima de
+                    €10.000 a €50.000
+                  </TypographyTitle>
+                </Box>
                 <List
                   sx={{
                     listStyleType: "disc",
@@ -59,13 +61,15 @@ export default function Sec6() {
                 item
                 xs={12}
                 lg={6}
-                sx={{ marginTop: { xs: "33px", lg: "" } }}
+                sx={{ marginTop: { xs: "33px", lg: "0px" } }}
               >
-                <img src={Warning2} alt="" />
-                <TypographyTitle>
-                  Infrações graves podem ser punidas com coima de €3.000 a
-                  €9.000
-                </TypographyTitle>
+                <Box sx={{ display: "flex", gap: "8px" }}>
+                  <img src={Warning2} alt="" />
+                  <TypographyTitle>
+                    Infrações graves podem ser punidas com coima de €3.000 a
+                    €9.000
+                  </TypographyTitle>
+                </Box>
                 <List
                   sx={{
                     listStyleType: "disc",
