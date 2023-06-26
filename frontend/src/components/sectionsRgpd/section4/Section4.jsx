@@ -11,8 +11,8 @@ export default function Sec4() {
         maxWidth="lg"
         disableGutters
         sx={{
-          marginTop: { xs: "64px", lg: "265px" },
-          marginBottom: { xs: "64px", lg: "383px" },
+          marginTop: { xs: "128px", lg: "265px" },
+          marginBottom: { xs: "128px", lg: "383px" },
         }}
       >
         <Grid

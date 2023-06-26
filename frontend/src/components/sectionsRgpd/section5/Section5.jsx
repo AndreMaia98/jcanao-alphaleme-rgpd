@@ -134,7 +134,7 @@ export default function Sec5() {
           item
           xs={12}
           lg={3}
-          sx={{ display: { xs: "block", lg: "none" }, marginBottom: "8px" }}
+          sx={{ display: { xs: "block", lg: "none" }, marginBottom: "32px" }}
         >
           <Title>Coimas por inconformidade</Title>
         </Grid>
@@ -168,7 +168,14 @@ export default function Sec5() {
               </TypographyText>
             </Grid>
           </Grid>
-          <Grid item xs={12}>
+          <Grid
+            item
+            xs={12}
+            sx={{
+              marginTop: { xs: "64px", lg: "0px" },
+              marginBottom: { xs: "64px", lg: "0px" },
+            }}
+          >
             <Grid item xs={12} lg={6}>
               <TypographyTitle>Ação legal</TypographyTitle>
             </Grid>
@@ -207,7 +214,7 @@ export default function Sec5() {
         <Box sx={{ marginTop: "32px" }}>
           <Button>Saiba como podemos ajudar</Button>
         </Box>
-        <Grid container sx={{ marginTop: "250px" }}>
+        <Grid container sx={{ marginTop: { xs: " 128px", lg: "250px" } }}>
           <Grid item xs={12} sx={{ display: "flex", justifyContent: "center" }}>
             <Grid item xs={12} lg={8.5}>
               <TypographyBottom>

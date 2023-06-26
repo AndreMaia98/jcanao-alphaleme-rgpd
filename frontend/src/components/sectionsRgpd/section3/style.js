@@ -18,6 +18,10 @@ export const SBox = styled(Box)`
     border-radius: 8px;
     padding: 32px;
     min-height: 340px;
+    @media (max-width: 768px) {
+      padding: 16px;
+      min-height: 220px;
+    }
   }
 `;
 

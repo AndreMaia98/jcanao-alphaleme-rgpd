@@ -9,7 +9,8 @@ export default function Sec6() {
       maxWidth="false"
       sx={{
         background: `url(${BottomRgpd})`,
-        marginTop: { xs: "0px", lg: "442px" },
+        marginTop: { xs: "128px", lg: "442px" },
+        marginBottom: { xs: "128px", lg: "0px" },
         paddingTop: { xs: "128px", lg: "296px" },
         paddingBottom: { xs: "64px", lg: "480px" },
       }}
@@ -30,7 +31,7 @@ export default function Sec6() {
         </Grid>
         <SBox>
           <Grid container>
-            <Grid item xs>
+            <Grid item xs={12} md={6} lg={6}>
               <List
                 sx={{
                   listStyleType: "disc",
@@ -62,7 +63,7 @@ export default function Sec6() {
                 </STypographyText>
               </List>
             </Grid>
-            <Grid item xs>
+            <Grid item xs={12} md={6} lg={6}>
               <List
                 sx={{
                   listStyleType: "disc",

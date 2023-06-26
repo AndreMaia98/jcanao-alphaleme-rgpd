@@ -21,6 +21,9 @@ export const SButton = styled(Button)`
     &:hover {
       background: var(--white);
     }
+    @media (max-width: 600px) {
+      font-size: 20px;
+    }
   }
 `;
 
