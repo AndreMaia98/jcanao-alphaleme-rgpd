@@ -27,11 +27,9 @@ export const BoxExpanded = styled(Box)`
   border-radius: 8px;
   z-index: 1;
   left: 0;
+  top: 70px;
   border: 1px solid var(--blue);
-  width: 542px;
-  @media (max-width: 768px) {
-    width: 308px;
-  }
+  
 `;
 
 export const TypographyNumber = styled(Typography)`

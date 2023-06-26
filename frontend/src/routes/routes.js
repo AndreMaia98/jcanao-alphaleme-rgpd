@@ -1,7 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
-import Contact from "../pages/Contact";
 import SecurityError from "../pages/errors/ErrorSecurity";
 import Cookies from "../components/cookies";
 import RGPD from "../pages/Rgpd";

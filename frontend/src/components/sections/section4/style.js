@@ -16,6 +16,9 @@ export const TypographyText2 = styled(Typography)`
     font-family: Poppins Medium;
     color: var(--blue);
     text-align: left;
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
   }
 `;
 
@@ -33,5 +36,12 @@ export const TypographyTitle = styled(Typography)`
 export const SImg = styled.img`
   @media (max-width: 768px) {
     display: none;
+  }
+`;
+
+export const SImg2 = styled.img`
+  @media (max-width: 768px) {
+    width: 128px;
+    margin-bottom: 32px;
   }
 `;

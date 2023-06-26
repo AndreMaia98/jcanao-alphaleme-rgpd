@@ -12,7 +12,7 @@ export default function Sec8() {
         <Grid
           container
           sx={{
-            marginTop: "580px",
+            marginTop: { xs: "252px", lg: "580px" },
             display: "flex",
             justifyContent: "center",
             position: "relative",

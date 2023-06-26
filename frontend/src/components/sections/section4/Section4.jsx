@@ -5,6 +5,7 @@ import {
   TypographyTitle,
   TypographyText2,
   SImg,
+  SImg2,
 } from "./style";
 import percentage27 from "../../../assets/images/27.png";
 import percentage40 from "../../../assets/images/40.png";
@@ -23,7 +24,7 @@ export default function Sec4() {
           sx={{
             display: "flex",
             alignItems: "center",
-            marginTop: "315px",
+            marginTop: { xs: "128px", lg: "315px" },
             justifyContent: "center",
             position: "relative",
           }}
@@ -37,6 +38,7 @@ export default function Sec4() {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
+              order: { xs: -1, lg: "unset" },
             }}
           >
             <SImg
@@ -48,19 +50,11 @@ export default function Sec4() {
               src={bg271}
               alt=""
             />
-            <img
-              src={percentage27}
-              alt=""
-              style={{
-                "@media (max-width: 768px)": {
-                  width: "50px",
-                },
-              }}
-            />
+            <SImg2 src={percentage27} alt="" />
           </Grid>
           <Grid item xs={12} md={10} lg={6}>
             <TypographyText>
-              Dos ataques foram relacionados com <b>com extorsão</b>.{" "}
+              Dos ataques foram relacionados <b>com extorsão</b>.{" "}
             </TypographyText>
             <TypographyText>
               Destacam-se acima de tudo setores que sofram grandes prejuízos se
@@ -75,7 +69,7 @@ export default function Sec4() {
           sx={{
             display: "flex",
             alignItems: "center",
-            marginTop: "245px",
+            marginTop: { xs: "128px", lg: "245px" },
             justifyContent: "center",
           }}
         >
@@ -98,9 +92,10 @@ export default function Sec4() {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
+              order: { xs: -1, lg: "unset" },
             }}
           >
-            <img src={percentage40} alt="" />
+            <SImg2 src={percentage40} alt="" />
           </Grid>
         </Grid>
         <Grid container sx={{ marginTop: "225px", position: "relative" }}>
@@ -141,7 +136,7 @@ export default function Sec4() {
               justifyContent: "center",
             }}
           >
-            <img src={percentage83} alt="" />
+            <SImg2 src={percentage83} alt="" />
           </Grid>
           <Grid item xs={12} md={10} lg={6}>
             <TypographyText>
@@ -156,7 +151,7 @@ export default function Sec4() {
           sx={{
             display: "flex",
             alignItems: "center",
-            marginTop: "127px",
+            marginTop: { xs: "128px", lg: "128px" },
             justifyContent: "center",
           }}
         >
@@ -177,12 +172,19 @@ export default function Sec4() {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
+              order: { xs: -1, lg: "unset" },
             }}
           >
-            <img src={percentage50} alt="" />
+            <SImg2 src={percentage50} alt="" />
           </Grid>
         </Grid>
-        <Grid container sx={{ marginTop: "315px", marginBottom: "490px" }}>
+        <Grid
+          container
+          sx={{
+            marginTop: { xs: "128px", lg: "315px" },
+            marginBottom: { xs: "128px", lg: "490px" },
+          }}
+        >
           <Grid
             item
             xs={12}
@@ -203,7 +205,7 @@ export default function Sec4() {
                 gap: "35px",
               }}
             >
-              <img src={hexa257} alt="" />
+              <SImg2 src={hexa257} alt="" />
               <TypographyText2>
                 Crie uma estrutura resiliente, capaz de agir, reagir e prevenir
                 situações inesperadas.

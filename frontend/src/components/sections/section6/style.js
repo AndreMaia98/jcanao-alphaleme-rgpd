@@ -9,6 +9,10 @@ export const SBox = styled(Box)`
   margin-top: 323px;
   position: relative;
   overflow: hidden;
+  @media (max-width: 768px) {
+    padding: 16px;
+    margin-top: 128px;
+  }
 `;
 
 export const TypographyTitle = styled(Typography)`

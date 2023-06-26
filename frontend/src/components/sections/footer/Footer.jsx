@@ -16,7 +16,7 @@ export default function Footer2() {
           backgroundSize: "cover",
           backgroundPosition: "top",
           backgroundRepeat: "no-repeat",
-          marginTop: "430px",
+          marginTop: { xs: "128px", lg: "430px" },
         }}
       >
         <Container

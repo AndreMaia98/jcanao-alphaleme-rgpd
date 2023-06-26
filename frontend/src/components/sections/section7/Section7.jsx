@@ -5,7 +5,7 @@ import People from "../../../assets/logo/ios-people.png";
 import Task from "../../../assets/logo/task.png";
 import Button from "../../ui/buttons/button";
 import Text from "../../ui/typographys/text";
-import { TypographyTitle, TypographySubTitle, SImg } from "./style";
+import { TypographyTitle, TypographySubTitle, SImg, SImg2 } from "./style";
 import DotBg from "../../../assets/images/253.svg";
 
 export default function Sec7() {
@@ -18,7 +18,7 @@ export default function Sec7() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            marginTop: "297px",
+            marginTop: { xs: "128px", lg: "297px" },
             position: "relative",
           }}
         >
@@ -56,7 +56,7 @@ export default function Sec7() {
                 justifyContent: "center",
               }}
             >
-              <img src={Speed} alt="" />
+              <SImg2 src={Speed} alt="" />
             </Grid>
             <Grid item xs={12} lg={6}>
               <TypographySubTitle>
@@ -89,7 +89,7 @@ export default function Sec7() {
                 justifyContent: "center",
               }}
             >
-              <img src={People} alt="" />
+              <SImg2 src={People} alt="" />
             </Grid>
             <Grid item xs={12} lg={6}>
               <TypographySubTitle>
@@ -121,7 +121,7 @@ export default function Sec7() {
                 justifyContent: "center",
               }}
             >
-              <img src={Task} alt="" />
+              <SImg2 src={Task} alt="" />
             </Grid>
             <Grid item xs={12} lg={6}>
               <TypographySubTitle>Priorizar iniciativas</TypographySubTitle>

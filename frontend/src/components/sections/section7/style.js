@@ -25,3 +25,9 @@ export const SImg = styled.img`
     display: none;
   }
 `;
+
+export const SImg2 = styled.img`
+  @media (max-width: 768px) {
+    margin-bottom: 32px;
+  }
+`;
