@@ -1,6 +1,6 @@
 import { Box, Container, Grid } from "@mui/material";
 import React from "react";
-import { TypographyText, TypographyTitle, SBox } from "./style";
+import { TypographyText, TypographyTitle, SBox, SImg } from "./style";
 import Button from "../../ui/buttons/buttonwhite";
 import DotBg from "../../../assets/images/253.svg";
 import { Link } from "react-router-dom";
@@ -12,22 +12,13 @@ export default function Sec8() {
         <Grid
           container
           sx={{
-            marginTop: { xs: "252px", lg: "580px" },
+            marginTop: { xs: "352px", lg: "580px" },
             display: "flex",
             justifyContent: "center",
             position: "relative",
           }}
         >
-          <img
-            src={DotBg}
-            alt="dot"
-            style={{
-              position: "absolute",
-              top: "-43%",
-              left: "-30%",
-              zIndex: -1,
-            }}
-          />
+          <SImg src={DotBg} alt="dot" />
           <Grid item xs={12} lg={8}>
             <SBox>
               <TypographyTitle>

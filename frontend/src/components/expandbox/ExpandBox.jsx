@@ -1,5 +1,5 @@
 import { Box, Grid, List, ListItem } from "@mui/material";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Arrow from "../../assets/icons/arrow_down.svg";
 import {
   SBox,
@@ -12,6 +12,7 @@ import data from "../../data/action.json";
 
 export default function ExpandBox() {
   const [isExpanded, setIsExpanded] = useState({});
+  const expandBoxRef = useRef(null);
 
   const handleExpand = (number) => {
     setIsExpanded((prevState) => ({
@@ -19,6 +20,17 @@ export default function ExpandBox() {
       [number]: !prevState[number],
     }));
   };
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        expandBoxRef.current &&
+        !expandBoxRef.current.containes(event.target)
+      ) {
+        setIsExpanded({});
+      }
+    };
+  }, []);
 
   const firstGridData = data.Action.slice(0, 5);
   const secondGridData = data.Action.slice(5);
@@ -28,7 +40,7 @@ export default function ExpandBox() {
       container
       sx={{
         display: "flex",
-        gap: "16px",
+        gap: { xs: "0px", lg: "16px" },
         marginBottom: "64px",
         justifyContent: "center",
       }}
@@ -36,6 +48,7 @@ export default function ExpandBox() {
       <Grid item xs={12} sm={12} md={8} lg>
         {firstGridData.map((item) => (
           <SBox
+            ref={expandBoxRef}
             key={item.number}
             onClick={() => handleExpand(item.Number)}
             isExpanded={isExpanded[item.Number]}
@@ -87,6 +100,7 @@ export default function ExpandBox() {
       <Grid item xs={12} sm={12} md={8} lg>
         {secondGridData.map((item) => (
           <SBox
+            ref={expandBoxRef}
             key={item.number}
             onClick={() => handleExpand(item.Number)}
             isExpanded={isExpanded[item.Number]}

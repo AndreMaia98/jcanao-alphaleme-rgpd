@@ -18,7 +18,7 @@ export default function Sec2() {
       <Container maxWidth="lg" disableGutters>
         <Grid
           container
-          sx={{ display: "flex", gap: { xs: "64px", lg: "16px" } }}
+          sx={{ display: "flex", gap: { xs: "32px", lg: "16px" } }}
         >
           <Grid item xs={12}>
             <Title>Beneficie com o RGPD</Title>
@@ -62,7 +62,13 @@ export default function Sec2() {
             </Box>
             <Button>Obtenha um DPO</Button>
           </Grid>
-          <Grid item xs={12} md={6} lg>
+          <Grid
+            item
+            xs={12}
+            md={6}
+            lg
+            sx={{ marginTop: { xs: "64px", lg: "0px" } }}
+          >
             <SBox>
               <Box
                 sx={{ display: "flex", flexDirection: "column", gap: "16px" }}
