@@ -169,6 +169,7 @@ export const GridContainer2 = styled(Grid)`
     box-shadow: 0px 0px 6px var(--green-third);
     background: var(--white);
     display: flex;
+    gap: 8px;
     flex-direction: column;
     justify-content: space-between;
   }

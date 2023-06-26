@@ -17,7 +17,7 @@ import { MenuItem, Grid, CircularProgress, Modal } from "@mui/material";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 
-export default function ContactForm({ openModal, handleClose  }) {
+export default function ContactForm({ openModal, handleClose }) {
   const options = [
     "Demo do produto",
     "Mais informação",
@@ -69,8 +69,8 @@ export default function ContactForm({ openModal, handleClose  }) {
               Abra uma porta para o futuro
             </STypographyContactTitle>
             <STypographyContactSubText>
-              Saiba como pode melhorar o seu negócio com as nossas ferramentas de
-              fácil integração, adaptáveis ao detalhe de cada negócio.
+              Saiba como pode melhorar o seu negócio com as nossas ferramentas
+              de fácil integração, adaptáveis ao detalhe de cada negócio.
             </STypographyContactSubText>
             <STypographyContactText>
               Deixe-nos o seu contacto para que lhe enviemos mais informação ou
