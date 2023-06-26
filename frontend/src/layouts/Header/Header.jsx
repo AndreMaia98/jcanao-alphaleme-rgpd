@@ -1,14 +1,16 @@
-import React from "react";
-import { SContainer, Simg } from "./styles";
+import React, { useEffect, useState } from "react";
+import { SButton, SContainer, Simg } from "./styles";
 import { Grid, Container } from "@mui/material";
-// import { Link } from "react-router-dom";
 import Logo from "../../assets/logo/Alphaleme.png";
+import { Link,  useLocation } from "react-router-dom";
 
 export default function Header() {
-  // const buttonData = [
-  //   { name: "Sobre Nós", link: "/about" },
-  //   { name: "Serviços", link: "/services" },
-  // ];
+  const [activeRoute, setActiveRoute] = useState("/");
+  const location = useLocation();
+
+  useEffect(() => {
+    setActiveRoute(location.pathname);
+  }, [location]);
 
   return (
     <SContainer maxWidth={false}>
@@ -31,13 +33,13 @@ export default function Header() {
           <Grid item>
             <Simg src={Logo} alt="" />
           </Grid>
-          {/* <Grid item sx={{ display: "flex", gap: { xs: "16px", sm: "32px" } }}>
-            {buttonData.map((button) => (
-              <Link to={button.link} key={button.name}>
-                <SButton>{button.name}</SButton>
-              </Link>
-            ))}
-          </Grid> */}
+          <Grid item sx={{ display: "flex", gap: { xs: "16px", sm: "32px" } }}>
+            <Link to={activeRoute === "/" ? "/rgpd" : "/"}>
+              <SButton disableRipple>
+                {activeRoute === "/" ? "RGPD" : "Cibersegurança"}
+              </SButton>
+            </Link>
+          </Grid>
         </Grid>
       </Container>
     </SContainer>
