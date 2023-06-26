@@ -10,7 +10,7 @@ export default function Sec6() {
       sx={{
         background: `url(${BottomRgpd})`,
         marginTop: { xs: "0px", lg: "442px" },
-        paddingTop: { xs: "64px", lg: "296px" },
+        paddingTop: { xs: "128px", lg: "296px" },
         paddingBottom: { xs: "64px", lg: "480px" },
       }}
     >
