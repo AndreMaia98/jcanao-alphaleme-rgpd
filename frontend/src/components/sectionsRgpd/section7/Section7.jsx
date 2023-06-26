@@ -1,7 +1,7 @@
 import { Box, Container, Grid } from "@mui/material";
 import React from "react";
-import { TypographyText, TypographyTitle, SBox } from "./style";
-import Button from "../../ui/buttons/button";
+import { TypographyText, TypographyTitle, SBox, SButton } from "./style";
+import { Link } from "react-router-dom";
 
 export default function Sec7() {
   return (
@@ -35,7 +35,9 @@ export default function Sec7() {
                   dos seus dados. Não há solução mais eficaz!
                 </TypographyText>
                 <Box align="start">
-                  <Button>Saber mais</Button>
+                  <Link to="/">
+                    <SButton>Saber mais</SButton>
+                  </Link>
                 </Box>
               </SBox>
             </Grid>
