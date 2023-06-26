@@ -3,6 +3,7 @@ import React from "react";
 import { TypographyText, TypographyTitle, SBox } from "./style";
 import Button from "../../ui/buttons/buttonwhite";
 import DotBg from "../../../assets/images/253.svg";
+import { Link } from "react-router-dom";
 
 export default function Sec8() {
   return (
@@ -39,7 +40,9 @@ export default function Sec8() {
                 impacto que ciberataques possam criar?
               </TypographyText>
               <Box align="end">
-                <Button>Saber mais</Button>
+                <Link to="/rgpd">
+                  <Button>Saber mais</Button>
+                </Link>
               </Box>
             </SBox>
           </Grid>
