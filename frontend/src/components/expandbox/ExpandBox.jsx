@@ -115,7 +115,15 @@ export default function ExpandBox() {
             >
               <TypographyNumber>{item.Number}</TypographyNumber>
               <TypographyTitle>{item.Title}</TypographyTitle>
-              <img src={Arrow} alt="" style={{ marginLeft: "auto" }} />
+              <img
+                src={Arrow}
+                alt=""
+                style={{
+                  marginLeft: "auto",
+                  transition: "transform 0.3s ease-in-out",
+                  transform: isExpanded[item.Number] ? "rotate(180deg)" : "",
+                }}
+              />
             </Box>
             {isExpanded[item.Number] && (
               <BoxExpanded>

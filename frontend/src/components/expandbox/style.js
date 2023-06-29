@@ -29,6 +29,9 @@ export const BoxExpanded = styled(Box)`
   left: 0;
   top: 70px;
   border: 1px solid var(--blue);
+  @media (min-width: 768px) {
+    width: "92%";
+  }
 `;
 
 export const TypographyNumber = styled(Typography)`
