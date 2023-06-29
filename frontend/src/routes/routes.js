@@ -10,7 +10,6 @@ function AppRoutes() {
     <Routes>
       <Route path="*" element={<SecurityError />} />
       <Route path="/" element={<Home />} />
-      <Route path="/cookies" element={<Cookies />} />
       <Route path="/rgpd" element={<RGPD />} />
     </Routes>
   );

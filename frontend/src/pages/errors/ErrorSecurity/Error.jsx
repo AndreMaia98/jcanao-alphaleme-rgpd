@@ -4,6 +4,7 @@ import Button from "../../../components/ui/buttons/buttonwhite";
 import { TypographyTitle, TypographyText } from "./styles";
 import CyberError from "../../../assets/images/ciber_error.svg";
 import Footer from "../../../components/sections/footer";
+import { Link } from "react-router-dom";
 
 export default function ErrorSecurity() {
   return (
@@ -50,7 +51,9 @@ export default function ErrorSecurity() {
                   http://www.example.com/page.html
                 </TypographyText>
               </Box>
-              <Button>Voltar</Button>
+              <Link to="/">
+                <Button>Voltar</Button>
+              </Link>
             </Grid>
           </Grid>
         </Container>

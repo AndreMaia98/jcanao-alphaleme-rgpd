@@ -51,10 +51,10 @@ export const TypographyText = styled(Typography)`
   }
 `;
 
-export const ButtonDeny = styled(Button)`
+export const ButtonAccept = styled(Button)`
   && {
     border-radius: 8px;
-    background: var(--black);
+    background: var(--blue);
     box-shadow: 0px 1px 3px var(--gray);
     padding: 10px 26px;
     font-size: 20px;
@@ -63,7 +63,7 @@ export const ButtonDeny = styled(Button)`
     color: var(--white);
     text-transform: none;
     &:hover {
-      background: var(--black);
+      background: var(--blue-second);
     }
     width: max-content;
   }
