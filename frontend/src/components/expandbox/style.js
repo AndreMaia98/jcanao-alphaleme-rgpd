@@ -17,6 +17,7 @@ export const SBox = styled(Box)`
     border: 1px solid var(--blue);
   }
   position: relative;
+  width: auto;
 `;
 
 export const BoxExpanded = styled(Box)`
@@ -30,7 +31,7 @@ export const BoxExpanded = styled(Box)`
   top: 70px;
   border: 1px solid var(--blue);
   @media (min-width: 768px) {
-    width: "92%";
+    width: 92%;
   }
 `;
 
