@@ -111,7 +111,7 @@ export default function Sec4() {
           <Grid item xs={12} align="center">
             <Grid item xs={12} lg={8.5}>
               <TypographyTitle>
-                Custo médio global de violações de dados atinge máximo histório
+                Custo médio global de violações de dados atinge máximo histórico
               </TypographyTitle>
             </Grid>
           </Grid>
