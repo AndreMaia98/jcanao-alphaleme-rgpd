@@ -9,11 +9,22 @@ export const Title = styled(Typography)`
     margin-bottom: 32px;
   }
 `;
+
+export const Title2 = styled(Typography)`
+  && {
+    font-size: 24px;
+    font-family: Poppins Semibold;
+    color: var(--blue);
+    margin-bottom: 16px;
+  }
+`;
+
 export const Text = styled(Typography)`
   && {
     font-size: 16px;
     font-family: Poppins Regular;
     color: var(--black);
+    margin-bottom: 32px;
   }
 `;
 

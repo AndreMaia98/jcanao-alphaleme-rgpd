@@ -85,14 +85,14 @@ export default function Footer2() {
               </TypographyDesc>
               <TypographyDesc>
                 <Link
-                  to=""
+                  to="/cookies-policy"
                   target="_blank"
                   style={{
                     textDecoration: "none",
                     color: "var(--black)",
                   }}
                 >
-                  Livro de Reclamações
+                  Política de Cookies
                 </Link>
               </TypographyDesc>
             </Grid>

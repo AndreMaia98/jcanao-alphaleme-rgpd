@@ -3,7 +3,6 @@ import React from "react";
 import { TypographyText, TypographyTitle, SBox, SImg } from "./style";
 import Button from "../../ui/buttons/buttonwhite";
 import DotBg from "../../../assets/images/253.svg";
-import { Link } from "react-router-dom";
 
 export default function Sec8() {
   return (
