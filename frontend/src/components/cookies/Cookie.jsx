@@ -64,13 +64,12 @@ export default function Cookies() {
               <Box
                 sx={{
                   display: "flex",
-                  justifyContent: "center",
+                  justifyContent: "start",
                   gap: "16px",
                   marginTop: "16px",
                 }}
               >
                 <Button>Aceitar</Button>
-                <ButtonDeny>Recusar</ButtonDeny>
               </Box>
             </Grid>
             <Grid item>
@@ -86,6 +85,10 @@ export default function Cookies() {
                   pb: 0,
                   "& .MuiListItem-root": {
                     display: "list-item",
+                    padding: "0px",
+                    "&::marker": {
+                      color: "var(--blue)",
+                    },
                   },
                 }}
               >
@@ -94,24 +97,28 @@ export default function Cookies() {
                   informado e inequívoco";
                 </SListItem>
                 <SListItem>
-                  O consentimento deve ser "dado livremente, específico,
-                  informado e inequívoco";
+                  A solicitação de consentimento deve ser "claramente
+                  distinguível de outros assuntos" e apresentada em "linguagem
+                  clara e simples";
                 </SListItem>
                 <SListItem>
-                  O consentimento deve ser "dado livremente, específico,
-                  informado e inequívoco";
+                  Os titulares dos dados podem retirar o consentimento
+                  previamente dado sempre que quiserem, devendo acatar a sua
+                  decisão. Você não pode simplesmente mudar a base legal do
+                  processamento para uma das outras justificativas,
                 </SListItem>
                 <SListItem>
-                  O consentimento deve ser "dado livremente, específico,
-                  informado e inequívoco";
+                  Os titulares dos dados podem retirar o consentimento
+                  previamente dado sempre que quiserem, devendo acatar a sua
+                  decisão. Você não pode simplesmente mudar a base legal do
+                  processamento para uma das outras justificativas;
                 </SListItem>
                 <SListItem>
-                  O consentimento deve ser "dado livremente, específico,
-                  informado e inequívoco";
+                  Crianças menores de 13 anos só podem dar consentimento com
+                  permissão dos pais;
                 </SListItem>
                 <SListItem>
-                  O consentimento deve ser "dado livremente, específico,
-                  informado e inequívoco";
+                  É necessário manter provas documentais de consentimento.
                 </SListItem>
               </List>
               <TypographyText2>
