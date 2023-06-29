@@ -1,8 +1,15 @@
 import { Box, Container, Grid } from "@mui/material";
 import React from "react";
-import { TypographyBox, SBox, TypographyText, TypographyTitle } from "./style";
+import {
+  TypographyBox,
+  SBox,
+  TypographyText,
+  TypographyTitle,
+  SImg,
+} from "./style";
 import Button from "../../ui/buttons/button";
 import { Link } from "react-router-dom";
+import Livro from "../../../assets/images/livro.png";
 
 export default function Sec4() {
   return (
@@ -18,8 +25,13 @@ export default function Sec4() {
         <Grid
           container
           disableGutters
-          sx={{ display: "flex", justifyContent: "center" }}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            position: "relative",
+          }}
         >
+          <SImg src={Livro} alt="dot" />
           <Grid item xs={12} lg={6}>
             <TypographyTitle>Boas Práticas</TypographyTitle>
             <TypographyText>

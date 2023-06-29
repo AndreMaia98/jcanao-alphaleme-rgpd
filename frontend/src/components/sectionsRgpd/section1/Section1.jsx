@@ -9,6 +9,7 @@ import Button from "../../ui/buttons/button";
 export default function Sec1() {
   return (
     <Container
+      id="rgpd"
       maxWidth="false"
       sx={{
         background: `url(${BG})`,

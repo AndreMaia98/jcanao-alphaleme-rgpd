@@ -146,3 +146,13 @@ export const TypographyBottom = styled(Typography)`
     color: var(--black);
   }
 `;
+
+export const SImg = styled.img`
+  position: absolute;
+  top: -8%;
+  left: 50%;
+  z-index: -1;
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;

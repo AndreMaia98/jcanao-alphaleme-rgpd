@@ -13,10 +13,12 @@ import {
   TypographyBottom,
   SGridMobile,
   SGrid2Mobile,
+  SImg,
 } from "./style";
 import warning from "../../../assets/icons/warning.svg";
 import warning2 from "../../../assets/icons/warning2.svg";
 import Button from "../../ui/buttons/button";
+import Seta from "../../../assets/images/seta.svg";
 
 export default function Sec5() {
   return (
@@ -173,8 +175,10 @@ export default function Sec5() {
             xs={12}
             sx={{
               marginTop: { xs: "64px", lg: "0px" },
+              position: "relative",
             }}
           >
+            <SImg src={Seta} alt="dot" />
             <Grid item xs={12} lg={6}>
               <TypographyTitle>Ação legal</TypographyTitle>
             </Grid>

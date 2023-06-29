@@ -41,3 +41,13 @@ export const TypographyBox = styled(Typography)`
     }
   }
 `;
+
+export const SImg = styled.img`
+  position: absolute;
+  top: -8%;
+  left: 71%;
+  z-index: -1;
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;

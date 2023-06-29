@@ -31,9 +31,9 @@ export default function Sec8() {
                 impacto que ciberataques possam criar?
               </TypographyText>
               <Box align="end">
-                <Link to="/rgpd">
+                <a href="/rgpd#rgpd">
                   <Button>Saber mais</Button>
-                </Link>
+                </a>
               </Box>
             </SBox>
           </Grid>

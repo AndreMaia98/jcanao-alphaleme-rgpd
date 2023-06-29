@@ -40,9 +40,9 @@ export default function Sec7() {
                   dos seus dados. Não há solução mais eficaz!
                 </TypographyText>
                 <Box align="start">
-                  <Link to="/">
+                  <a href="/#ciberseguranca">
                     <SButton>Saber mais</SButton>
-                  </Link>
+                  </a>
                 </Box>
               </SBox>
             </Grid>
