@@ -16,6 +16,7 @@ import {
 import { MenuItem, Grid, CircularProgress, Modal } from "@mui/material";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
+import { Link } from "react-router-dom";
 
 export default function ContactForm({ openModal, handleClose }) {
   const options = [
@@ -82,6 +83,7 @@ export default function ContactForm({ openModal, handleClose }) {
             <Grid item xs>
               <SLabel>Nome</SLabel>
               <SInput
+                required
                 disableUnderline={true}
                 onChange={(e) => setUser_name(e.target.value)}
               />
@@ -108,6 +110,7 @@ export default function ContactForm({ openModal, handleClose }) {
               <Grid item xs>
                 <SLabel>Email</SLabel>
                 <SInput
+                  required
                   disableUnderline={true}
                   onChange={(e) => setUser_mail(e.target.value)}
                 />
@@ -128,6 +131,7 @@ export default function ContactForm({ openModal, handleClose }) {
               </Grid>
               <Grid item xs={12} lg={8}>
                 <SSelect
+                  required
                   id="outlined-select-currency"
                   select="true"
                   sx={{
@@ -177,7 +181,17 @@ export default function ContactForm({ openModal, handleClose }) {
               >
                 <SCheckbox type="checkbox" />
                 <STypographyCheck>
-                  Li e aceito os termos de Privacidade
+                  Li e aceito os{" "}
+                  <a
+                    href="/terms-conditions#terms"
+                    target="_blank"
+                    style={{
+                      color: "var(--blue)",
+                      textDecoration: "underline",
+                    }}
+                  >
+                    termos de Privacidade
+                  </a>
                 </STypographyCheck>
               </Grid>
               <Grid item xs={12} lg={4} align="end">

@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Grid } from "@mui/material";
 import { SContainer, STypographyDesc } from "./styles";
-import Linkedin from "../../../../assets/icons/linkedin-icon.svg";
+import Linkedin from "../../../../assets/icons/linkedin_icon2.svg";
 import { Link } from "react-router-dom";
 
 export default function AdditionalInfo() {
