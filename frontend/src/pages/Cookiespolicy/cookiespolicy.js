@@ -8,6 +8,7 @@ export default function cookiespolicy() {
   return (
     <>
       <Container
+      id="cookies"
         maxWidth="false"
         sx={{ borderTop: "3px solid var(--gray-primary)" }}
       >

@@ -78,37 +78,38 @@ export default function Footer2() {
             <Grid item xs={12} lg={2}>
               <TypographyTitles>Legal</TypographyTitles>
               <TypographyDesc>
-                <Link
-                  to="/cookies-policy"
+                <a
+                  href="/cookies-policy#cookies"
                   style={{
                     textDecoration: "none",
                     color: "var(--black)",
+                    cursor: "pointer",
                   }}
                 >
                   Política de Cookies
-                </Link>
+                </a>
               </TypographyDesc>
               <TypographyDesc>
-                <Link
-                  to="/privacy-policy"
+                <a
+                  href="/privacy-policy#privacy"
                   style={{
                     textDecoration: "none",
                     color: "var(--black)",
                   }}
                 >
                   Política de Privacidade
-                </Link>
+                </a>
               </TypographyDesc>
               <TypographyDesc>
-                <Link
-                  to="/terms-conditions"
+                <a
+                  href="/terms-conditions#terms"
                   style={{
                     textDecoration: "none",
                     color: "var(--black)",
                   }}
                 >
                   Termos e Condições
-                </Link>
+                </a>
               </TypographyDesc>
               <TypographyDesc>
                 <Link

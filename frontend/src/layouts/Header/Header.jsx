@@ -8,7 +8,7 @@ import {
   ListItem,
   Divider,
 } from "@mui/material";
-import Logo from "../../assets/logo/LogoAlphaleme.svg";
+import Logo from "../../assets/logo/Alphaleme_novo.svg";
 import { Link, useLocation } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/MenuRounded";
 
@@ -48,7 +48,14 @@ export default function Header() {
             justifyContent: "space-between",
           }}
         >
-          <Grid item>
+          <Grid
+            item
+            sx={{
+              height: "100%",
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
             <Simg src={Logo} alt="" />
           </Grid>
           <Grid

@@ -8,6 +8,7 @@ export default function privacypolicy() {
   return (
     <>
       <Container
+        id="privacy"
         maxWidth="false"
         sx={{ borderTop: "3px solid var(--gray-primary)" }}
       >
