@@ -36,7 +36,7 @@ export default function Cookies({ handleClose }) {
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
-          padding: { xs: "16px 0px", lg: "155px 0px" },
+          padding: { xs: "0px 0px", lg: "155px 0px" },
         }}
       >
         <Container maxWidth="lg" disableGutters>
