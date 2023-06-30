@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import SecurityError from "../pages/errors/ErrorSecurity";
 import PrivacyPolicy from "../pages/Privacypolicy";
 import CookiesPolicy from "../pages/Cookiespolicy";
+import TermsConditions from "../pages/Terms&Conditions";
 import RGPD from "../pages/Rgpd";
 
 function AppRoutes() {
@@ -14,6 +15,7 @@ function AppRoutes() {
       <Route path="/rgpd" element={<RGPD />} />
       <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       <Route path="/cookies-policy" element={<CookiesPolicy />} />
+      <Route path="/terms-conditions" element={<TermsConditions />} />
     </Routes>
   );
 }

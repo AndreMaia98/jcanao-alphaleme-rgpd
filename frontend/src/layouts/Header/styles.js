@@ -2,6 +2,25 @@ import { Container } from "@mui/material";
 import { Button } from "@mui/material";
 import styled from "styled-components";
 
+const getButtonStyles = (activeRoute) => {
+  if (activeRoute === "/rgpd") {
+    return {
+      backgroundColor: "var(--light-blue2)",
+      color: "var(--black)",
+    };
+  } else if (activeRoute === "/") {
+    return {
+      backgroundColor: "var(--light-blue2)",
+      color: "var(--black)",
+    };
+  } else {
+    return {
+      backgroundColor: "none",
+      color: "var(--black)",
+    };
+  }
+};
+
 export const SContainer = styled(Container)`
   flex-grow: 1;
   display: flex;
@@ -13,17 +32,35 @@ export const SContainer = styled(Container)`
 
 export const SButton = styled(Button)`
   && {
-    color: var(--blue);
-    font-size: 24px;
+    color: var(--black);
+    font-size: 20px;
     text-transform: none;
-    font-family: Poppins Medium;
+    font-family: Poppins SemiBold;
     font-weight: 500;
+    height: 100%;
+    width: 200px;
+    background: none;
     &:hover {
-      background: var(--white);
+      background: var(--light-blue2);
+      color: var(--black);
+    }
+    &:focus {
+      background: var(--light-blue2);
+      color: var(--blue);
     }
     @media (max-width: 600px) {
       font-size: 20px;
     }
+    ${(props) =>
+      props.activeRoute === props.route
+        ? `
+          background-color: var(--light-blue2);
+          color: var(--blue);
+        `
+        : `
+          background-color: none;
+          color: var(--black);
+        `}
   }
 `;
 

@@ -8,5 +8,6 @@ export const TypographyText = styled(Typography)`
     font-family: Poppins Regular;
     color: var(--black);
     text-align: left;
+    margin-bottom: 16px;
   }
 `;

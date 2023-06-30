@@ -45,5 +45,8 @@ export const SBox = styled(Box)`
     flex-direction: column;
     justify-content: center;
     gap: 16px;
+    @media (max-width: 768px) {
+      padding: 16px;
+    }
   }
 `;

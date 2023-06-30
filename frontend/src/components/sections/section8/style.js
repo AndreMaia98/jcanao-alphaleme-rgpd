@@ -6,6 +6,9 @@ export const SBox = styled(Box)`
   padding: 32px;
   border-radius: 8px;
   box-shadow: 0px 1px 3px var(--gray);
+  @media (max-width: 768px) {
+    padding: 16px;
+  }
 `;
 
 export const TypographyTitle = styled(Typography)`

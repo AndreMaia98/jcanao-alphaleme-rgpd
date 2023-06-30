@@ -33,10 +33,32 @@ export default function Header() {
           <Grid item>
             <Simg src={Logo} alt="" />
           </Grid>
-          <Grid item sx={{ display: "flex", gap: { xs: "16px", sm: "32px" } }}>
-            <Link to={activeRoute === "/" ? "/rgpd" : "/"}>
-              <SButton disableRipple disableFocusRipple>
-                {activeRoute === "/" ? "RGPD" : "Cibersegurança"}
+          <Grid
+            item
+            sx={{
+              display: "flex",
+              gap: { xs: "16px", sm: "16px" },
+              height: "100%",
+            }}
+          >
+            <Link to="/rgpd">
+              <SButton
+                disableRipple
+                disableFocusRipple
+                activeRoute={activeRoute}
+                route="/rgpd"
+              >
+                RGPD
+              </SButton>
+            </Link>
+            <Link to="/">
+              <SButton
+                disableRipple
+                disableFocusRipple
+                activeRoute={activeRoute}
+                route="/"
+              >
+                Cibersegurança
               </SButton>
             </Link>
           </Grid>

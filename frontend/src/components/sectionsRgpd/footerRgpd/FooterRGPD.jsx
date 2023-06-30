@@ -1,4 +1,4 @@
-import { Container, Grid } from "@mui/material";
+import { Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import FooterBG from "../../../assets/images/ciber_bottom.png";
 import { TypographyText, TypographyTitles, TypographyDesc } from "./style";
@@ -29,12 +29,15 @@ export default function Footer1() {
               item
               xs={12}
               lg={6}
-              sx={{ background: "var(--white)", padding: "32px" }}
+              sx={{
+                background: "var(--white)",
+                padding: { xs: "16px", lg: "32px" },
+              }}
             >
               <img src={Alphaleme} alt="" />
               <TypographyText>
-                Garanta a segurança dos seus dados. O maior valor de qualquer
-                pessoa, negócio ou tecnologia, são os seus dados.
+                Companhias que se preocupam com a Proteção de Dados,
+                preocupam-se com os seus clientes!
               </TypographyText>
             </Grid>
           </Grid>
@@ -46,20 +49,26 @@ export default function Footer1() {
               justifyContent: "end",
               gap: "26px",
               background: "var(--white)",
-              padding: "32px",
+              padding: { xs: "16px", lg: "32px" },
             }}
           >
-            <Grid item xs={12} lg={2}>
+            <Grid item xs={12} lg={2.2}>
               <TypographyTitles>Contactos</TypographyTitles>
               <TypographyDesc>
-                +351 924 453 250 <br />
-                <span style={{ fontSize: "10px" }}>
+                +351 <b>924 453 260</b> <br />
+                <span style={{ fontSize: "9px" }}>
                   (chamada para rede móvel nacional)
                 </span>
               </TypographyDesc>
+              <Typography fontSize={14} fontFamily={"Poppins Regular"}>
+                alphaleme@alphaleme.pt
+              </Typography>
             </Grid>
             <Grid item xs={12} lg={2.5}>
               <TypographyTitles>Localização</TypographyTitles>
+              <TypographyDesc>
+                R. Alexandre Herculano 15 1250-008 Lisboa (sede)
+              </TypographyDesc>
               <TypographyDesc>
                 Av. de Cabo Verde, lote 5 4900-568 Viana do Castelo
               </TypographyDesc>
@@ -77,6 +86,18 @@ export default function Footer1() {
               <TypographyTitles>Legal</TypographyTitles>
               <TypographyDesc>
                 <Link
+                  to="/cookies-policy"
+                  target="_blank"
+                  style={{
+                    textDecoration: "none",
+                    color: "var(--black)",
+                  }}
+                >
+                  Política de Cookies
+                </Link>
+              </TypographyDesc>
+              <TypographyDesc>
+                <Link
                   to="/privacy-policy"
                   target="_blank"
                   style={{
@@ -89,14 +110,26 @@ export default function Footer1() {
               </TypographyDesc>
               <TypographyDesc>
                 <Link
-                  to="/cookies-policy"
+                  to="/terms-conditions"
                   target="_blank"
                   style={{
                     textDecoration: "none",
                     color: "var(--black)",
                   }}
                 >
-                  Política de Cookies
+                  Termos e Condições
+                </Link>
+              </TypographyDesc>
+              <TypographyDesc>
+                <Link
+                  to="https://www.livroreclamacoes.pt/Inicio/"
+                  target="_blank"
+                  style={{
+                    textDecoration: "none",
+                    color: "var(--black)",
+                  }}
+                >
+                  Livro de Reclamações
                 </Link>
               </TypographyDesc>
             </Grid>

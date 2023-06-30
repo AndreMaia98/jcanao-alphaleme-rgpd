@@ -51,6 +51,7 @@ export const SBox = styled(Box)`
 
     @media (max-width: 768px) {
       height: auto;
+      padding: 16px;
     }
   }
 `;

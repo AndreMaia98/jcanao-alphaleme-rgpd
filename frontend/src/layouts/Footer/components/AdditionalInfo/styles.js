@@ -17,5 +17,6 @@ export const SContainer = styled(Container)`
   && {
     background: rgba(255, 255, 255, 0.2);
     min-height: 64px;
+    height: 64px;
   }
 `;
