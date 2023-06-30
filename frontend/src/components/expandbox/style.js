@@ -30,6 +30,7 @@ export const BoxExpanded = styled(Box)`
   left: 0;
   top: 70px;
   border: 1px solid var(--blue);
+  width: 89%;
   @media (min-width: 768px) {
     width: 92%;
   }
