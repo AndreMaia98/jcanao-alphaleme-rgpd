@@ -6,6 +6,9 @@ export const SBox = styled(Box)`
     background: var(--white);
     border-radius: 8px;
     padding: 32px;
+    @media (max-width: 768px) {
+      padding: 16px;
+    }
   }
 `;
 

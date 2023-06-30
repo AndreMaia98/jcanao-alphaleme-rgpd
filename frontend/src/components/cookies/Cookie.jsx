@@ -22,16 +22,21 @@ export default function Cookies({ handleClose }) {
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
+        overflowY: "scroll",
+        width: "100%",
+        height: "100%",
       }}
     >
       <Container
         maxWidth="false"
         sx={{
+          width: "100%",
+          height: "100%",
           background: `url(${BG})`,
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
-          padding: "155px 0px",
+          padding: { xs: "16px 0px", lg: "155px 0px" },
         }}
       >
         <Container maxWidth="lg" disableGutters>
@@ -39,7 +44,7 @@ export default function Cookies({ handleClose }) {
             <Grid container>
               <Grid
                 item
-                xs
+                lg
                 sx={{
                   display: "flex",
                   flexDirection: "column",
@@ -84,10 +89,17 @@ export default function Cookies({ handleClose }) {
                   </ButtonAccept>
                 </Box>
               </Grid>
-              <Grid item>
+              <Grid item sx={{ display: { xs: "none", lg: "block" } }}>
                 <SDivider orientation="vertical" />
               </Grid>
-              <Grid item xs sx={{ marginLeft: "33px" }}>
+              <Grid
+                item
+                lg
+                sx={{
+                  marginLeft: "33px",
+                  display: { xs: "none", lg: "block" },
+                }}
+              >
                 <TypographyTitle2>De acordo com GDPR.EU</TypographyTitle2>
                 <List
                   sx={{
