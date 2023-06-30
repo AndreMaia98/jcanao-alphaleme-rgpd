@@ -60,7 +60,7 @@ export default function Footer2() {
             <Grid item xs={12} lg={2.5}>
               <TypographyTitles>Localização</TypographyTitles>
               <TypographyDesc>
-                R. Alexandre Herculano 15 1250-008 Lisboa (sede)
+                R. Alexandre Herculano 15, 4º Andar, 1250-008 Lisboa (sede)
               </TypographyDesc>
               <TypographyDesc>
                 Av. de Cabo Verde, lote 5 4900-568 Viana do Castelo
