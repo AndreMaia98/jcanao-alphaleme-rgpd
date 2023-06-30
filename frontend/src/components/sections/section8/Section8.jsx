@@ -30,7 +30,7 @@ export default function Sec8() {
                 impacto que ciberataques possam criar?
               </TypographyText>
               <Box align="end">
-                <a href="/rgpd#rgpd">
+                <a href="/rgpd#rgpd" style={{ textDecoration: "none" }}>
                   <Button>Saber mais</Button>
                 </a>
               </Box>

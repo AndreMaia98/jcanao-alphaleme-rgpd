@@ -106,7 +106,7 @@ export default function Header() {
                     width: "50%",
                   }}
                 >
-                  <Link to="/rgpd" sx={{ textDecoration: "none" }}>
+                  <Link to="/rgpd" style={{ textDecoration: "none" }}>
                     <SButton
                       disableRipple
                       disableFocusRipple
@@ -128,7 +128,7 @@ export default function Header() {
                   }}
                 />
                 <ListItem disablePadding>
-                  <Link to="/" sx={{ textDecoration: "none" }}>
+                  <Link to="/" style={{ textDecoration: "none" }}>
                     <SButton
                       disableRipple
                       disableFocusRipple
