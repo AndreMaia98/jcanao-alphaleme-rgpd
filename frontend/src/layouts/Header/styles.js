@@ -40,6 +40,7 @@ export const SButton = styled(Button)`
     height: 100%;
     width: 200px;
     background: none;
+    text-decoration: none;
     &:hover {
       background: var(--light-blue2);
       color: var(--black);
