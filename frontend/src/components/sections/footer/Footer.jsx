@@ -80,7 +80,6 @@ export default function Footer2() {
               <TypographyDesc>
                 <Link
                   to="/cookies-policy"
-                  target="_blank"
                   style={{
                     textDecoration: "none",
                     color: "var(--black)",
@@ -92,7 +91,6 @@ export default function Footer2() {
               <TypographyDesc>
                 <Link
                   to="/privacy-policy"
-                  target="_blank"
                   style={{
                     textDecoration: "none",
                     color: "var(--black)",
@@ -104,7 +102,6 @@ export default function Footer2() {
               <TypographyDesc>
                 <Link
                   to="/terms-conditions"
-                  target="_blank"
                   style={{
                     textDecoration: "none",
                     color: "var(--black)",

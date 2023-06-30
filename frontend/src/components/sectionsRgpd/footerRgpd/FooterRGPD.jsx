@@ -43,95 +43,101 @@ export default function Footer1() {
           </Grid>
           <Grid
             container
+            xs={12}
             sx={{
               marginTop: "215px",
               display: "flex",
               justifyContent: "end",
-              gap: "26px",
-              background: "var(--white)",
-              padding: { xs: "16px", lg: "32px" },
             }}
           >
-            <Grid item xs={12} lg={2.2}>
-              <TypographyTitles>Contactos</TypographyTitles>
-              <TypographyDesc>
-                +351 <b>924 453 260</b> <br />
-                <span style={{ fontSize: "9px" }}>
-                  (chamada para rede móvel nacional)
-                </span>
-              </TypographyDesc>
-              <Typography fontSize={14} fontFamily={"Poppins Regular"}>
-                alphaleme@alphaleme.pt
-              </Typography>
-            </Grid>
-            <Grid item xs={12} lg={2.5}>
-              <TypographyTitles>Localização</TypographyTitles>
-              <TypographyDesc>
-                R. Alexandre Herculano 15 1250-008 Lisboa (sede)
-              </TypographyDesc>
-              <TypographyDesc>
-                Av. de Cabo Verde, lote 5 4900-568 Viana do Castelo
-              </TypographyDesc>
-              <Link
-                to="https://goo.gl/maps/99aMJ8tZskjkg7Rk9"
-                target="_blank"
-                style={{ textDecoration: "none" }}
-              >
+            <Grid
+              item
+              xs={8}
+              sx={{
+                display: "flex",
+                gap: "26px",
+                background: "var(--white)",
+                padding: { xs: "16px", lg: "32px" },
+              }}
+            >
+              <Grid item xs={12} lg={4}>
+                <TypographyTitles>Contactos</TypographyTitles>
                 <TypographyDesc>
-                  <b>Googlemaps</b>
+                  +351 <b>924 453 260</b> <br />
+                  <span style={{ fontSize: "9px" }}>
+                    (chamada para rede móvel nacional)
+                  </span>
                 </TypographyDesc>
-              </Link>
-            </Grid>
-            <Grid item xs={12} lg={2}>
-              <TypographyTitles>Legal</TypographyTitles>
-              <TypographyDesc>
+                <Typography fontSize={14} fontFamily={"Poppins Regular"}>
+                  alphaleme@alphaleme.pt
+                </Typography>
+              </Grid>
+              <Grid item xs={12} lg={4}>
+                <TypographyTitles>Localização</TypographyTitles>
+                <TypographyDesc>
+                  R. Alexandre Herculano 15 1250-008 Lisboa (sede)
+                </TypographyDesc>
+                <TypographyDesc>
+                  Av. de Cabo Verde, lote 5 4900-568 Viana do Castelo
+                </TypographyDesc>
                 <Link
-                  to="/cookies-policy"
+                  to="https://goo.gl/maps/99aMJ8tZskjkg7Rk9"
                   target="_blank"
-                  style={{
-                    textDecoration: "none",
-                    color: "var(--black)",
-                  }}
+                  style={{ textDecoration: "none" }}
                 >
-                  Política de Cookies
+                  <TypographyDesc>
+                    <b>Googlemaps</b>
+                  </TypographyDesc>
                 </Link>
-              </TypographyDesc>
-              <TypographyDesc>
-                <Link
-                  to="/privacy-policy"
-                  target="_blank"
-                  style={{
-                    textDecoration: "none",
-                    color: "var(--black)",
-                  }}
-                >
-                  Política de Privacidade
-                </Link>
-              </TypographyDesc>
-              <TypographyDesc>
-                <Link
-                  to="/terms-conditions"
-                  target="_blank"
-                  style={{
-                    textDecoration: "none",
-                    color: "var(--black)",
-                  }}
-                >
-                  Termos e Condições
-                </Link>
-              </TypographyDesc>
-              <TypographyDesc>
-                <Link
-                  to="https://www.livroreclamacoes.pt/Inicio/"
-                  target="_blank"
-                  style={{
-                    textDecoration: "none",
-                    color: "var(--black)",
-                  }}
-                >
-                  Livro de Reclamações
-                </Link>
-              </TypographyDesc>
+              </Grid>
+              <Grid item xs={12} lg={4}>
+                <TypographyTitles>Legal</TypographyTitles>
+                <TypographyDesc>
+                  <Link
+                    to="/cookies-policy"
+                    style={{
+                      textDecoration: "none",
+                      color: "var(--black)",
+                    }}
+                  >
+                    Política de Cookies
+                  </Link>
+                </TypographyDesc>
+                <TypographyDesc>
+                  <Link
+                    to="/privacy-policy"
+                    style={{
+                      textDecoration: "none",
+                      color: "var(--black)",
+                    }}
+                  >
+                    Política de Privacidade
+                  </Link>
+                </TypographyDesc>
+                <TypographyDesc>
+                  <Link
+                    to="/terms-conditions"
+                    style={{
+                      textDecoration: "none",
+                      color: "var(--black)",
+                    }}
+                  >
+                    Termos e Condições
+                  </Link>
+                </TypographyDesc>
+                <TypographyDesc>
+                  <Link
+                    to="https://www.livroreclamacoes.pt/Inicio/"
+                    target="_blank"
+                    style={{
+                      textDecoration: "none",
+                      color: "var(--black)",
+                    }}
+                  >
+                    Livro de Reclamações
+                  </Link>
+                </TypographyDesc>
+              </Grid>
             </Grid>
           </Grid>
         </Container>
