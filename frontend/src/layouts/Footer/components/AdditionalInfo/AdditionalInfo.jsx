@@ -33,7 +33,13 @@ export default function AdditionalInfo() {
               to="https://www.linkedin.com/authwall?trk=qf&original_referer=https://www.google.com/&sessionRedirect=https%3A%2F%2Fpt.linkedin.com%2Fcompany%2Fjcanao"
               target="_blank"
             >
-              <img style={{ marginTop: "10px" }} src={Linkedin} alt="" />
+              <img
+                style={{
+                  marginTop: "10px",
+                }}
+                src={Linkedin}
+                alt=""
+              />
             </Link>
           </Grid>
           <Grid item>

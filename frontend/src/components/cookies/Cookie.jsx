@@ -16,7 +16,14 @@ import { Link } from "react-router-dom";
 
 export default function Cookies({ handleClose }) {
   return (
-    <Modal open={true}>
+    <Modal
+      open={true}
+      sx={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
       <Container
         maxWidth="false"
         sx={{
