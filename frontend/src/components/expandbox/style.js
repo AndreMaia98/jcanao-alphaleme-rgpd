@@ -12,12 +12,11 @@ export const SBox = styled(Box)`
   cursor: pointer;
   border: 1px solid transparent;
   margin-bottom: 32px;
+  position: relative;
   &:hover {
     background: var(--light-blue2);
     border: 1px solid var(--blue);
   }
-  position: relative;
-  width: auto;
 `;
 
 export const BoxExpanded = styled(Box)`
@@ -28,12 +27,10 @@ export const BoxExpanded = styled(Box)`
   border-radius: 8px;
   z-index: 1;
   left: 0;
-  top: 70px;
+  top: 100%;
   border: 1px solid var(--blue);
-  width: 89%;
-  @media (min-width: 768px) {
-    width: 92%;
-  }
+  width: 100%;
+  box-sizing: border-box;
 `;
 
 export const TypographyNumber = styled(Typography)`

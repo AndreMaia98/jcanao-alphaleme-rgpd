@@ -74,7 +74,7 @@ export default function Header() {
               sx={{ width: "40px", height: "40px", color: "var(--blue)" }}
             />
             <Drawer
-              anchor="left"
+              anchor="right"
               open={isMobileMenuOpen}
               onClose={toggleMobileMenu}
               sx={{
