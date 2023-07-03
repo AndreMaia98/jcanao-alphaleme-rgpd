@@ -52,9 +52,10 @@ export default function Footer1() {
           >
             <Grid
               item
-              xs={8}
+              xs={12}
+              lg={8}
               sx={{
-                display: "flex",
+                display: { xs: "block", lg: "flex" },
                 gap: "26px",
                 background: "var(--white)",
                 padding: { xs: "16px", lg: "32px" },
