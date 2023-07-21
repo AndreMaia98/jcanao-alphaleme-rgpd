@@ -13,7 +13,7 @@ export const SButton = styled(Button)`
     color: var(--white);
     text-transform: none;
     &:hover {
-      background: var(--blue);
+      background: var(--blue-second);
     }
     width: max-content;
   }

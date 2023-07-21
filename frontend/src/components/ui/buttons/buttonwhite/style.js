@@ -12,8 +12,11 @@ export const SButton = styled(Button)`
     font-weight: 500;
     color: var(--blue);
     text-transform: none;
+    border: 2px solid transparent;
     &:hover {
-      background: var(--white);
+      background: var(--primary);
+      color: var(--white);
+      border: 2px solid var(--white);
     }
     width: max-content;
   }
